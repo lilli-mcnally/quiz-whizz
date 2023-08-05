@@ -4,3 +4,15 @@ body {
     font-family: 'Preahvihear', sans-serif;
     color: #000;
 }
+
+/* Home page */
+
+#home-background {
+    background: url("../images/cinema.jpg") no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
