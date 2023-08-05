@@ -1,108 +1,87 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# QUIZ WHIZZ
 
-Welcome USER_NAME,
+## Purpose and Value
+### User goals
+- To play a quiz game about films and test their knowledge
+Website goals
+- For the user to find the format and layout of the quiz website obvious and easy to navigate
+- To provide a fun game with 10 – 50 questions about films to users
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### User Stories
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+> A couple who want to add a quiz game into their Friday Game nights when they have friends over. They want to play the game on their laptop so the questions and answers are big for everyone to see. They want to be able to get straight on to the game, and access the rules easily at any time.
 
-## Gitpod Reminders
+> A man who likes to do puzzles and quizzes on his very long commute to work. He want to have the option to play with lots of questions to keep him entertained. He would like the game to easily function from the web on a mobile device without needing to scroll or spend too much time figuring out how the website works.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Competitor Review
 
-`python3 -m http.server`
+I’ve reviewed a few quiz related websites, including [Sporcle]( https://www.sporcle.com/?refresh) and [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
+### Pros
 
-A blue button should appear to click: _Make Public_,
+Sporcle
 
-Another blue button should appear to click: _Open Browser_.
+- Each quiz is easy to use, the user doesn’t need to figure out how to play.
+- The game keeps a running score total
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Buzzfeed
 
-A blue button should appear to click: _Make Public_,
+- The film questions have images to go with them, so the user can see a snippet of the movie if they’re unsure on the title.
 
-Another blue button should appear to click: _Open Browser_.
+### Cons
+Sporcle
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- Home page and game page layouts is very crowded and confusing for the user.
 
-To log into the Heroku toolbelt CLI:
+Buzzfeed
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The quiz runs in a linear layout, rather than each new question being displayed where the previous one was. This added to the busy layout with adverts for other quizzes means it’s unclear for the user where the quiz starts and ends.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Objectives
+- To provide easy access to the game on the home page
+- To provide a Rules page to explain how the game works
+- To give options for different genre’s of quiz
+- To give options for how many questions the user wants in the game
+- To keep a running score and show the total score at the end
 
-------
+| Objective                                                         | Importance | Viability / Feasibility | Colour |
+|-------------------------------------------------------------------|------------|-------------------------|--------|
+| To provide easy access to the game on the home page               | 5          | 5                       | Green  |
+| To provide a Rules page to explain how the game works             | 4          | 3                       | Purple |
+| To give options for different genre’s of quiz                     | 3          | 2                       | Blue   |
+| To give options for how many questions the user wants in the game | 3          | 4                       | Yellow |
+| To keep a running score and show the total score at the end       | 5          | 4                       | Red    |
 
-## Release History
+![Scattergraph of the Objectives, Importance and Viability/Feasibility table](/assets/images/readme/objectives-scatter-graph.PNG "Objectives, Importance and Viability/Feasibility table")
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+From the scatter graph above, I have decided to focus on the following four objectives:
+- To provide easy access to the game on the home page
+- To provide a Rules page to explain how the game works
+- To give options for how many questions the user wants in the game
+- To keep a running score and show the total score at the end
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+In the future, I would like to add additional quizzes to the website so the user can choose between a Movies quiz, a TV show quiz and a Music quiz.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Structure
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+I have chosen to create the website with five different pages. This is so that the user will be able to see clear difference between where the game is, where the rules are, and the home page. These five pages are:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Home page
+- Setup page – to ask the user how many questions they want
+- Game page – the page where the user plays the quiz game
+- Score page – the page where the user is told their total score after completing the quiz
+- Rules page – where the user can check how the quiz works and what the rules are.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Wireframes and Prototypes
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- [Home page wireframe](/assets/images/readme/wireframes-and-prototype/home-page-wireframe.png "Home page wireframe")
+- [Setup page wireframe](/assets/images/readme/wireframes-and-prototype/setup-page-wireframe.png "Setup page wireframe")
+- [Game page wireframe](/assets/images/readme/wireframes-and-prototype/game-page-wireframe.png "Game page wireframe")
+- [Score page wireframe](/assets/images/readme/wireframes-and-prototype/score-page-wireframe.png "Score page wireframe")
+- [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
+- [Prototype Home page](/assets/images/readme/wireframes-and-prototype/home-page-prototype.PNG "Prototype Home page")
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Credits
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Images
+- [cinema](/assets/images/cinema.jpg) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/)
