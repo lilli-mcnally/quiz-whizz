@@ -84,4 +84,6 @@ I have chosen to create the website with five different pages. This is so that t
 ## Credits
 
 ### Images
-- [cinema](/assets/images/cinema.jpg) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/)
+- [cinema](/assets/images/cinema.jpg) by [Tima Miroshnichenko](https://www.pexels.com/@tima-miroshnichenko/)
+- [pencils] by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
+- [question-marks] by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
