@@ -7,10 +7,23 @@ body {
     color: #000;
 }
 
+.fa-house-chimney {
+    font-size: 35px;
+    margin: 24px;
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+}
+
 .logo {
     margin: auto;
     display: flex;
     justify-content: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
 }
 
 .logo-text {
@@ -72,7 +85,7 @@ body {
     align-items: center;
 }
 
-.opacity:hover {
+.opacity {
     background-color: rgb(255, 255, 255, 0.3);
 }
 
