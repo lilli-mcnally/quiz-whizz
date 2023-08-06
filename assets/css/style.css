@@ -72,7 +72,7 @@ body {
     align-items: center;
 }
 
-#opacity {
+.opacity:hover {
     background-color: rgb(255, 255, 255, 0.3);
 }
 
@@ -106,14 +106,27 @@ body {
     margin-top: 50px;
 }
 
-.ten,
-.twenty-five,
-.fifty,
+.ten {
+    background-color: #92C1F1;
+}
+
+.twenty-five {
+    background-color: #C5B4E9;
+}
+
+.fifty {
+    background-color: #FFD87B;
+}
+
 .rules-setup {
-    background-color: #7dcbb5;
+    background-color: rgb(125, 203, 181, 0.7);
 }
 
 .setup-wrapper {
     height: 150px;
-    width: 50%;
+    width: 60%;
+}
+
+.opacity-dark:hover {
+    background-color: rgb(0, 0, 0, 0.3);
 }
