@@ -14,7 +14,8 @@ body {
 }
 
 .logo-text {
-    font-size: 40px;
+    font-size: 60px;
+    margin: 0;
 }
 
 /* Home page */
@@ -35,4 +36,43 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 20px;
+}
+
+#home-text {
+    text-align: center;
+    margin: 0;
+}
+
+#button-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.home-buttons {
+    height: 250px;
+    width: 35%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+.play {
+    background-color: #ffd42a;
+}
+
+.play:hover {
+    background: url(../images/question-marks-g607ef1ea9_1280.png) no-repeat center center;
+}
+
+.rules {
+    background-color: #7dcbb5;
+}
+
+.rules:hover {
+    background: url(../images/pencils-g2d01c7346_1280_1_40.jpg) no-repeat center center;
 }

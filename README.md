@@ -78,7 +78,7 @@ I have chosen to create the website with five different pages. This is so that t
 - [Game page wireframe](/assets/images/readme/wireframes-and-prototype/game-page-wireframe.png "Game page wireframe")
 - [Score page wireframe](/assets/images/readme/wireframes-and-prototype/score-page-wireframe.png "Score page wireframe")
 - [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
-- [Prototype Home page](/assets/images/readme/wireframes-and-prototype/home-page-prototype.PNG "Prototype Home page")
+- [Prototype Game page](/assets/images/readme/wireframes-and-prototype/game-page-prototype.PNG "Prototype Game page")
 
 
 ## Credits
