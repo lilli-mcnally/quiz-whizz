@@ -116,7 +116,7 @@ body {
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .ten {
@@ -142,4 +142,5 @@ body {
 
 .opacity-dark:hover {
     background-color: rgb(0, 0, 0, 0.3);
+    color: #fff;
 }
