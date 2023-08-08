@@ -1,12 +1,20 @@
-let api = new XMLHttpRequest();
+function getData(cb) {
+    let api = new XMLHttpRequest();
+    let data;
 
-api.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-        console.log(JSON.parse(this.responseText));
-        document.getElementById("test").innerHTML = this.responseText;
-    }
-};
+    api.open("GET", "https://opentdb.com/api.php?amount=50&category=11&type=multiple");
+    api.send();
 
-api.open("GET", "https://opentdb.com/api.php?amount=50&category=11&type=multiple");
+    api.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
 
-api.send();
+}
+
+function accessApi(data) {
+    console.log(data);
+}
+
+getData(accessApi);
