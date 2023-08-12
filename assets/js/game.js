@@ -1,21 +1,23 @@
+// Checks the URL in the browser for the value of "p"
 let params = new URLSearchParams(document.location.search);
 let q = params.get("q");
-let questions = []
+
+// An empty array for all the questions
+let questions = [];
+
+// Score
+let score = 0;
+
+// Index is how we will increment how many questions have been answered
 let index = 0;
-let submit = document.getElementById("submit");
-let answerIndex = [];
+
+// Answer buttons defined in variables
+// let submit = document.getElementsByClassName("submit");
 
 async function getQuestions() {
-    const response = await fetch(`https://opentdb.com/api.php?amount=${Number(q)}&category=11&type=multiple`)
-    const json = await response.json()
-    questions = json.results
-}
-
-let game = {
-    a: "",
-    b: "",
-    c: "",
-    d: "",
+    const response = await fetch(`https://opentdb.com/api.php?amount=${Number(q)}&category=11&type=multiple`);
+    const json = await response.json();
+    questions = json.results;
 }
 
 function getNewQuestion() {
@@ -27,7 +29,7 @@ function getNewQuestion() {
     let four = questions[index].incorrect_answers[2];
     let answers = [one, two, three, four];
 
-    answer = answers.sort();
+    answers = answers.sort();
 
     document.getElementById("answer-one").innerHTML = answers[0];
     document.getElementById("answer-two").innerHTML = answers[1];
@@ -37,10 +39,13 @@ function getNewQuestion() {
 
 function userSubmit() {
     index++;
+    // if (submit === one) {
+    //     score++
+    // }
     getNewQuestion();
 }
 
-submit.addEventListener("click", userSubmit);
+// submit.addEventListener("click", userSubmit);
 
 async function main() {
     await getQuestions()
