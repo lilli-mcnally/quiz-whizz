@@ -11,8 +11,6 @@ let score = 0;
 // Index is how we will increment how many questions have been answered
 let index = 0;
 
-// Answer buttons defined in variables
-// let submit = document.getElementsByClassName("submit");
 
 async function getQuestions() {
     const response = await fetch(`https://opentdb.com/api.php?amount=${Number(q)}&category=11&type=multiple`);
@@ -35,22 +33,36 @@ function getNewQuestion() {
     document.getElementById("answer-two").innerHTML = answers[1];
     document.getElementById("answer-three").innerHTML = answers[2];
     document.getElementById("answer-four").innerHTML = answers[3];
+    document.getElementById("score").innerHTML = `Score: ${score} / ${q}`;
 }
 
+
+
 function userSubmit() {
-    index++;
-    // if (submit === one) {
-    //     score++
-    // }
+    for (let submit of document.getElementsByClassName("submit")) {
+        submit.addEventListener("click", (e) => {
+            let move = e.target.getAttribute("id");
+            let answer = document.getElementById(move).innerHTML;
+            if (answer == questions[index].correct_answer) {
+                score++
+                document.getElementById("score").innerHTML = `Score: ${score} / ${q}`;
+                console.log(score)
+            } else {
+                console.log(score)
+            }
+        });
+        index++;
+    }
     getNewQuestion();
 }
 
-// submit.addEventListener("click", userSubmit);
+
 
 async function main() {
     await getQuestions()
     getNewQuestion()
     console.log(questions)
+    userSubmit();
 }
 
 main()
