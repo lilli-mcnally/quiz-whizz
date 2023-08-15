@@ -1,4 +1,7 @@
-// Checks the URL in the browser for the value of "p"
+/**
+ * Checks the URL in the browser for the value of "q".
+ * "q" is given a value when the user chooses how many questions they want the game to have.
+ */
 let params = new URLSearchParams(document.location.search);
 let q = params.get("q");
 
@@ -65,20 +68,27 @@ function userSubmit() {
             } else {
                 // console.log(game.score)
             }
-            if (game.index === q) {
+
+            //Increment game turn by 1
+            game.index++;
+
+            //Check if the game turns is equal to the number of questions requested.
+            if (String(game.index) === q) {
                 gameOver();
             } else {
-                game.index++;
-                console.log(game.index);
-                console.log(q);
                 getNewQuestion();
             }
         });
     };
 };
 
+//Replaces the game HTML with the score page
 function gameOver() {
-    console.log("Game Over")
+    document.getElementById("question").innerHTML = `WOOHOO! You got:`;
+    document.getElementById("answer-one").style.display = "none";
+    document.getElementById("answer-two").style.display = "none";
+    document.getElementById("answer-three").style.display = "none";
+    document.getElementById("answer-four").style.display = "none";
 }
 
 
