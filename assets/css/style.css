@@ -53,7 +53,7 @@ body {
     padding-bottom: 30px;
 }
 
-#home-text {
+.home-text {
     text-align: center;
     margin: 0;
 }
@@ -111,7 +111,7 @@ body {
     padding: 2% 10%;
 }
 
-#setup-div {
+.setup-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
@@ -123,16 +123,36 @@ body {
     background-color: #92C1F1;
 }
 
+.ten:hover {
+    background-color: #6687a8;
+    color: #fff;
+}
+
 .twenty-five {
     background-color: #C5B4E9;
+}
+
+.twenty-five:hover {
+    background-color: #8a7ea3;
+    color: #fff;
 }
 
 .fifty {
     background-color: #FFD87B;
 }
 
+.fifty:hover {
+    background-color: #b29756;
+    color: #fff;
+}
+
 .rules-setup {
-    background-color: rgb(125, 203, 181, 0.7);
+    background-color: #a3d9ca;
+}
+
+.rules-setup:hover {
+    background-color: #72978d;
+    color: #fff;
 }
 
 .setup-wrapper {
@@ -140,7 +160,8 @@ body {
     width: 60%;
 }
 
-.opacity-dark:hover {
-    background-color: rgb(0, 0, 0, 0.3);
-    color: #fff;
+/* Game page */
+
+.submit:hover {
+    cursor: pointer;
 }

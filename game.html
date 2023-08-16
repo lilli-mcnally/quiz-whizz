@@ -10,13 +10,34 @@
 </head>
 
 <body>
-    <div>
-        <p id="question"></p>
-        <button id="answer-one" class="submit"></button>
-        <button id="answer-two" class="submit"></button>
-        <button id="answer-three" class="submit"></button>
-        <button id="answer-four" class="submit"></button>
-        <p id="score"></p>
+    <!-- Background Image -->
+    <div class="background" id="setup-background">
+        <!-- Central white box -->
+        <div id="home-box">
+            <div>
+                <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <h1 class="logo-text">Quiz Whizz</h1>
+                </a>
+            </div>
+            <p id="question" class="home-text"></p>
+            <div class="setup-div">
+                <!-- Answer One button -->
+                <div id="answer-one" class="ten buttons-wrapper setup-wrapper button-text submit"></div>
+                <!-- Answer One button -->
+                <div id="answer-two" class="twenty-five buttons-wrapper setup-wrapper button-text submit"></div>
+                <!-- Answer One button -->
+                <div id="answer-three" class="fifty buttons-wrapper setup-wrapper button-text submit"></div>
+                <!-- Answer One button -->
+                <div id="answer-four" class="rules-setup buttons-wrapper setup-wrapper button-text submit"></div>
+            </div>
+            <div>
+                <p id="score" class="home-text"></p>
+            </div>
+        </div>
     </div>
     <script src="/assets/js/game.js" type="text/javascript"></script>
 </body>
