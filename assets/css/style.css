@@ -165,3 +165,17 @@ body {
 .submit:hover {
     cursor: pointer;
 }
+
+#question {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#score {
+    font-size: 20px;
+}
+
+.answer-list {
+    font-size: 20px;
+}
