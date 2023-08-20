@@ -90,13 +90,18 @@ function userSubmit() {
 //Replaces the game HTML with the score page
 function gameOver() {
     document.getElementById("question").innerHTML = `WOOHOO! You got:`;
-    document.getElementById("answer-one").style.display = "none";
-    document.getElementById("answer-two").style.display = "none";
-    document.getElementById("answer-three").style.display = "none";
-    document.getElementById("answer-four").style.display = "none";
+    document.getElementById("answer-div-one").style.display = "none";
+    document.getElementById("answer-div-two").style.display = "none";
+    document.getElementById("answer-div-three").style.display = "none";
+    document.getElementById("answer-div-four").style.display = "none";
+    document.getElementById("game-area").style.display = "none";
     document.getElementById("score").style.fontSize = "40px";
-    document.getElementById("game-area").id = "game-answers";
 
+    let gameAnswers = document.createElement("div")
+    let gameAnswersId = gameAnswers.createAttribute("id");
+    gameAnswersId.setAttribute("id", "game-answers");
+
+    // gameAnswers.className = "setup-div";
     // let answerTitle = document.createElement("p");
     document.getElementById("answers-title").style.display = "block";
 
