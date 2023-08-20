@@ -29,7 +29,7 @@ async function getQuestions() {
 // Displays the question & answers
 function getNewQuestion() {
     //Requests the currect question using the index as a counter
-    document.getElementById("question").innerHTML = `Question ${Number(game.index) + 1}<br> ${game.questions[game.index].question}`;
+    document.getElementById("question").innerHTML = `Question ${Number(game.index) + 1}: ${game.questions[game.index].question}`;
 
     //Set the value for each question and adds them to an array together
     game.one = game.questions[game.index].correct_answer;
@@ -95,6 +95,10 @@ function gameOver() {
     document.getElementById("answer-three").style.display = "none";
     document.getElementById("answer-four").style.display = "none";
     document.getElementById("score").style.fontSize = "40px";
+    document.getElementById("game-area").id = "game-answers";
+
+    // let answerTitle = document.createElement("p");
+    document.getElementById("answers-title").style.display = "block";
 
     //Iterates through each value in the "selected" array
     for (let i in game.selected) {
@@ -103,7 +107,7 @@ function gameOver() {
         let answerList = document.createElement("p");
 
         //Appends the "p" to the div with the ID of"game-area"
-        document.getElementById("game-area").appendChild(answerList);
+        document.getElementById("game-answers").appendChild(answerList);
 
         //Checks if each value in the selected array matches the value of the same index in the correct array
         if (game.selected[i] == game.correct[i]) {
@@ -113,14 +117,14 @@ function gameOver() {
 
             //Changes font to green and adds the class name of "answer-list" for further styling
             answerList.className = "answer-list";
-            answerList.style.color = "green";
+            answerList.style.color = "#026302";
         } else {
             //Changes the HTML to the number of the question, and an X icon
             answerList.innerHTML = `${Number(i) + 1}. ${game.selected[i]} <i class="fa-solid fa-xmark"></i>`;
 
             //Changes font to red and adds the class name of "answer-list" for further styling
             answerList.className = "answer-list";
-            answerList.style.color = "red";
+            answerList.style.color = "#9e0202";
         }
     }
 }
