@@ -194,6 +194,8 @@ body {
 }
 
 #game-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     row-gap: 10px;
     margin-top: 20px;
     border: 8px solid #7dcbb5;
@@ -210,4 +212,9 @@ body {
 #answer-four {
     margin: auto;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

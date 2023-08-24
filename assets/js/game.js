@@ -98,8 +98,7 @@ function gameOver() {
     document.getElementById("score").style.fontSize = "40px";
 
     let gameAnswers = document.createElement("div")
-    let gameAnswersId = gameAnswers.createAttribute("id");
-    gameAnswersId.setAttribute("id", "game-answers");
+    gameAnswers.setAttribute("id", "game-answers");
 
     // gameAnswers.className = "setup-div";
     // let answerTitle = document.createElement("p");
@@ -112,7 +111,8 @@ function gameOver() {
         let answerList = document.createElement("p");
 
         //Appends the "p" to the div with the ID of"game-area"
-        document.getElementById("game-answers").appendChild(answerList);
+        // gameAnswers.appendChild(answerList);
+        gameAnswers.appendChild(answerList)
 
         //Checks if each value in the selected array matches the value of the same index in the correct array
         if (game.selected[i] == game.correct[i]) {
@@ -131,6 +131,8 @@ function gameOver() {
             answerList.className = "answer-list";
             answerList.style.color = "#9e0202";
         }
+
+        document.getElementById("answers-div").appendChild(gameAnswers)
     }
 }
 

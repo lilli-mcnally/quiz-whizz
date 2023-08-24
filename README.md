@@ -80,6 +80,23 @@ I have chosen to create the website with five different pages. This is so that t
 - [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
 - [Prototype Game page](/assets/images/readme/wireframes-and-prototype/game-page-prototype.PNG "Prototype Game page")
 
+## Bugs
+
+#### Score Page
+When I created the score page originally, I added a feature to present the users' selected answers in either red with a cross if they were wrong,and green with a tick if correct. I noticed when testing this worked that some of the longer answer options during the game play weren't staying centrally aligned, they would align left. 
+
+To fix this, I asked Javascript to create a paragraph element for each answer in the coloured boxes, and then added styling to align these to the center. This then created a problem with the answers page, as the question number, selected answer, and tick or cross were now all on seperate lines, as below.
+
+![Score Page Bug Issue](/assets/images/readme/bugs/score-page-issue-1.PNG "Score Page Bug Issue")
+
+I opened Developer Tools and found that some of the some, like "5." had the selected answer next to the number, inside the paragraph element with the class of "answer-list". However, others like "4." seemed to have another paragraph element inside with an id of "answer-one" or "answer-two" etc.
+
+![Score Page Bug Developer Tools](/assets/images/readme/bugs/score-page-issue-2.PNG "Score Page Bug Developer Tools")
+
+I stepped back through my code, using "console.log" to find at which point the paragraph was being given to the selected answer. The paragraph element was being passed into the selected array before the score page was created, so I went further back. I had created a variable called "answer" when the game was in play, which accessed the inner HTML of another variable called "move". I realised "move" was being used to obtain the ID of the click event, which meant it was assigning the inner HTML of whatever was clicked on to the "answer" variable. This was also because of the submit class still being assigned to the "div" instead of the paragraph element, so it was accepting a click on the div. I moved the submit class the paragraph element, and changed the paragraph element's height and width to 100%. This means wherever in the box the user clicks, the paragraph element in that box will be pushed into the selected answer array.
+
+![Score Page Bug fix](/assets/images/readme/bugs/score-page-fix.PNG "Score Page Bug fix")
+
 
 ## Credits
 
