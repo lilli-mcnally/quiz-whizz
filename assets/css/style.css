@@ -178,6 +178,10 @@ body {
     padding: 10px 0;
 }
 
+#rules-link:hover {
+    cursor: pointer;
+}
+
 #rules-link p,
 #play-again-link p {
     margin: 0;
@@ -284,6 +288,10 @@ body {
     margin: 0;
 }
 
+#close:hover {
+    cursor: pointer;
+}
+
 #modal-h4 {
     font-size: 40px;
     margin: 0;
@@ -319,6 +327,24 @@ body {
 
 #rules-text ol li {
     margin: 10px 0;
+}
+
+
+#error-modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+#error {
+    background: #fff;
+    border-radius: 15px;
 }
 
 /* RESPONSIVE DESIGN */

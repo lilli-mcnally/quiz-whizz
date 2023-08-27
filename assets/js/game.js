@@ -28,8 +28,16 @@ async function getQuestions() {
 
 // Displays the question & answers
 function getNewQuestion() {
+
+    //If the user has gone straight to the game page without choosing the number of questions they want, this redirects them to the setup page
+    if (q === null) {
+        window.location.replace("setup.html");
+    }
+
     //Requests the currect question using the index as a counter
     document.getElementById("question").innerHTML = `Question ${Number(game.index) + 1}: ${game.questions[game.index].question}`;
+
+
 
     //Set the value for each question and adds them to an array together
     game.one = game.questions[game.index].correct_answer;
