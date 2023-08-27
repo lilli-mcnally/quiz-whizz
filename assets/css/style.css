@@ -9,24 +9,27 @@ body {
 
 .fa-house-chimney {
     font-size: 35px;
-    margin: 24px;
-    position: absolute;
-    text-decoration: none;
+    /* margin: 24px; */
+    /* position: absolute; */
+    /* text-decoration: none; */
     color: #000;
 }
 
-.logo {
-    margin: auto;
+.nav {
     display: flex;
     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.logo a {
+.nav a {
     text-decoration: none;
     color: #000;
 }
 
-.logo-text {
+.nav-text {
     font-size: 60px;
     margin: 0;
 }
@@ -163,6 +166,42 @@ body {
 
 /* Game page */
 
+#game-house {
+    margin-right: 25px;
+}
+
+.games-links {
+    border-radius: 2px;
+    display: inline-block;
+}
+
+#rules-link {
+    background-color: #a3d9ca;
+    text-align: center;
+    width: 64px;
+    padding: 10px 0;
+}
+
+#rules-link p,
+#play-again-link p {
+    margin: 0;
+}
+
+#play-again-link {
+    display: none;
+    background-color: #92C1F1;
+    width: 200px;
+    height: 80px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
 .submit {
     font-size: 24px;
 }
@@ -217,4 +256,69 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#rules-modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+#rules-div {
+    background: #fff;
+    border-radius: 15px;
+}
+
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+#close {
+    font-size: 40px;
+    margin: 0;
+}
+
+#modal-h4 {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Rules page */
+
+#rules-div {
+    margin: auto;
+    height: auto;
+    width: 80%;
+}
+
+.rules-wrapper {
+    border-radius: 15px;
+    border: 15px solid #7dcbb5;
+    color: #000;
+}
+
+#rules-text {
+    flex-direction: column;
+}
+
+#rules-text h4 {
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+
+#rules-text ol {
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+#rules-text ol li {
+    margin: 10px 0;
 }

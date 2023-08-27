@@ -89,13 +89,15 @@ function userSubmit() {
 
 //Replaces the game HTML with the score page
 function gameOver() {
-    document.getElementById("question").innerHTML = `WOOHOO! You got:`;
+    document.getElementById("question").innerHTML = `WOOHOO! You got: ${game.score} / ${q}`;
+    document.getElementById("question").style.fontSize = "40px";
     document.getElementById("answer-div-one").style.display = "none";
     document.getElementById("answer-div-two").style.display = "none";
     document.getElementById("answer-div-three").style.display = "none";
     document.getElementById("answer-div-four").style.display = "none";
     document.getElementById("game-area").style.display = "none";
-    document.getElementById("score").style.fontSize = "40px";
+    document.getElementById("score").style.display = "none";
+    document.getElementById("play-again-link").style.display = "flex";
 
     let gameAnswers = document.createElement("div")
     gameAnswers.setAttribute("id", "game-answers");
@@ -131,8 +133,18 @@ function gameOver() {
             answerList.className = "answer-list";
             answerList.style.color = "#9e0202";
         }
-
         document.getElementById("answers-div").appendChild(gameAnswers)
+    }
+}
+
+document.getElementById("rules-link").onclick = function seeRules() {
+    let rulesModal = document.getElementById("rules-modal");
+    let close = document.getElementById("close");
+
+    rulesModal.style.display = "block";
+
+    close.onclick = function () {
+        rulesModal.style.display = "none";
     }
 }
 
@@ -144,11 +156,13 @@ async function main() {
     //Asks for the first question
     getNewQuestion()
 
-    //Logs the questions to the console ----> Do we need this?
+    //Logs the questions to the console
     console.log(game.questions)
 
     //Applies the Event Listeners and waits for the user to choose an answer
     userSubmit()
+
+
 }
 
 //Runs the startup for the game when the page first loads
