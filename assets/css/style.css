@@ -48,20 +48,22 @@ body {
     background-color: #fafafa;
     width: 100%;
     border-radius: 20px;
+    min-height: 250px;
+    height: auto;
     padding-bottom: 30px;
-    min-height: 80vh;
 }
 
 .home-text {
     text-align: center;
-    margin: 0;
+    margin: 0 20px;
     font-size: 20px;
 }
 
 #button-div {
     display: flex;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 30px 0 0 0;
+    height: 45vh;
 }
 
 .buttons-wrapper {
@@ -72,7 +74,7 @@ body {
 }
 
 .home-wrapper {
-    height: 250px;
+    height: 100%;
     width: 35%;
 }
 
@@ -272,7 +274,7 @@ body {
     overflow: scroll;
 }
 
-#rules-div {
+.rules-div {
     background: #fff;
     border-radius: 15px;
 }
@@ -299,7 +301,7 @@ body {
 
 /* Rules page */
 
-#rules-div {
+.rules-div {
     margin: auto;
     height: auto;
     width: 80%;
@@ -307,46 +309,97 @@ body {
 
 .rules-wrapper {
     border-radius: 15px;
-    border: 15px solid #7dcbb5;
+    border: 15px solid #a3d9ca;
     color: #000;
 }
 
-#rules-text {
+.rules-text {
     flex-direction: column;
 }
 
-#rules-text h4 {
+.rules-text h4 {
     font-size: 40px;
     margin: 20px 0 0 0;
 }
 
-#rules-text ol {
+.rules-text ol {
     font-size: 20px;
     margin: 0 20px 20px 20px;
 }
 
-#rules-text ol li {
+.rules-text ol li {
     margin: 10px 0;
-}
-
-
-#error-modal {
-    display: none;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-}
-
-#error {
-    background: #fff;
-    border-radius: 15px;
 }
 
 /* RESPONSIVE DESIGN */
 
 /* Home page */
+
+@media screen and (min-width: 1200px) {
+
+    .nav-text {
+        font-size: 55px;
+    }
+
+    .home-text {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    #button-div {
+        margin: 50px 0;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+
+    .fa-house-chimney {
+        font-size: 30px;
+    }
+
+    .nav-text {
+        font-size: 40px;
+    }
+
+    .home-text {
+        font-size: 18px;
+    }
+
+    .home-box {
+        min-height: 400px;
+    }
+
+    #button-div {
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+        margin: 0;
+    }
+
+    .home-wrapper {
+        width: 60%;
+        min-height: 80px;
+        height: 50%;
+        margin-top: 30px;
+    }
+
+    .button-text p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .fa-house-chimney {
+        font-size: 25px;
+    }
+
+    .nav-text {
+        font-size: 35px;
+    }
+
+    .button-text p {
+        font-size: 25px;
+    }
+}
