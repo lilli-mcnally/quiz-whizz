@@ -97,6 +97,23 @@ I stepped back through my code, using "console.log" to find at which point the p
 
 ![Score Page Bug fix](/assets/images/readme/bugs/score-page-fix.PNG "Score Page Bug fix")
 
+#### Nav bar
+
+I added a home icon and the Quiz Whizz logo to the top of the home box, but struggled to get these to fit in line with each other. Originally, I made the home icon fixed and gave it top and left properties. However, when I wanted to add the Rules modal, I couldn't keep the logo centered as easily.I added the Rules button first and styled it with CSS.
+![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-1.PNG "Score Page Bug fix")
+
+Then I gave it a top property of 50px, a left property of 150px and "position: abosolute;". This put the Rules button in the right place.
+![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-2.PNG "Score Page Bug fix")
+
+However, on smaller screens, the top and left properties became unproportionate, pushing the rules button too close to the logo.
+![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-3.PNG "Score Page Bug fix")
+
+I decided to remove the "position: absolute;" property on both the home icon and the rules button, and put all three elements into a div. I made the div display "flex", and added "justify-content: space-between;" with a margin left and right to create equal gaps between all three elements. I also added "align-items: centre;" to keep the home icon and rules button in line with the logo.
+![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-fix-1.PNG "Score Page Bug fix")
+
+Lastly, I checked this was working on smaller screens, and everything had adjusted correctly.
+![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-fix-2.PNG "Score Page Bug fix")
+
 
 ## Credits
 
