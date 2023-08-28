@@ -28,6 +28,7 @@ body {
 .nav-text {
     font-size: 50px;
     margin: 0;
+    text-align: center;
 }
 
 /* Home page */
@@ -165,7 +166,8 @@ body {
 /* Game page */
 
 #game-house {
-    margin-right: 25px;
+    margin-right: 12px;
+    margin-left: 12px;
 }
 
 .games-links {
@@ -375,6 +377,7 @@ body {
         justify-content: normal;
         align-items: center;
         margin: 0;
+        height: 50%;
     }
 
     .home-wrapper {
@@ -389,17 +392,65 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 440px) {
 
     .fa-house-chimney {
         font-size: 25px;
     }
 
     .nav-text {
-        font-size: 35px;
+        font-size: 30px;
+        line-height: 35px;
     }
 
     .button-text p {
         font-size: 25px;
+    }
+}
+
+
+/* Setup page */
+
+@media screen and (max-width: 786px) {
+
+    .setup-div {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Game page */
+
+@media screen and (max-width: 425px) {
+
+    #modal-header {
+        margin: 0 10px;
+    }
+
+    #modal-h4,
+    #close {
+        font-size: 35px;
+    }
+
+    .button-text ol {
+        margin-top: 0;
+    }
+
+    .button-text li {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Score page */
+
+@media screen and (max-width: 786px) {
+
+    #game-answers {
+        grid-template-columns: 1fr;
+    }
+
+    .answer-list {
+        height: auto;
     }
 }
