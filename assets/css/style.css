@@ -31,6 +31,7 @@ body {
     text-align: center;
 }
 
+
 /* Home page */
 
 .background {
@@ -47,10 +48,9 @@ body {
 
 .home-box {
     background-color: #fafafa;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 20px;
-    min-height: 250px;
-    /* height: 90%; */
+    min-height: 90%;
     padding-bottom: 30px;
 }
 
@@ -65,6 +65,7 @@ body {
     justify-content: space-around;
     margin: 30px 0 0 0;
     height: 45vh;
+    overflow-y: unset;
 }
 
 .buttons-wrapper {
@@ -353,24 +354,14 @@ body {
 
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 850px) {
 
     .fa-house-chimney {
         font-size: 30px;
     }
 
-    .nav-text {
-        line-height: 1;
-    }
-
-    .nav {
-        margin-bottom: 25px;
-    }
-
     .home-box {
-        min-height: 400px;
         padding-top: 20px;
-        margin-top: 30px;
     }
 
     #button-div {
@@ -392,6 +383,30 @@ body {
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .nav {
+        flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #format-div {
+        display: none;
+    }
+
+    .background {
+        padding: 3% 5%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .nav-text {
+        font-size: 45px;
+    }
+}
+
 
 
 
