@@ -50,7 +50,7 @@ body {
     width: 100%;
     border-radius: 20px;
     min-height: 250px;
-    height: auto;
+    /* height: 90%; */
     padding-bottom: 30px;
 }
 
@@ -276,11 +276,6 @@ body {
     overflow: scroll;
 }
 
-.rules-div {
-    background: #fff;
-    border-radius: 15px;
-}
-
 #modal-header {
     display: flex;
     justify-content: space-between;
@@ -307,6 +302,10 @@ body {
     margin: auto;
     height: auto;
     width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 15px;
 }
 
 .rules-wrapper {
@@ -361,15 +360,17 @@ body {
     }
 
     .nav-text {
-        font-size: 40px;
+        line-height: 1;
     }
 
-    .home-text {
-        font-size: 18px;
+    .nav {
+        margin-bottom: 25px;
     }
 
     .home-box {
         min-height: 400px;
+        padding-top: 20px;
+        margin-top: 30px;
     }
 
     #button-div {
@@ -384,7 +385,7 @@ body {
         width: 60%;
         min-height: 80px;
         height: 50%;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .button-text p {
@@ -392,21 +393,7 @@ body {
     }
 }
 
-@media screen and (max-width: 440px) {
 
-    .fa-house-chimney {
-        font-size: 25px;
-    }
-
-    .nav-text {
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .button-text p {
-        font-size: 25px;
-    }
-}
 
 
 /* Setup page */
@@ -416,7 +403,13 @@ body {
     .setup-div {
         grid-template-columns: 1fr;
     }
+
+    .rules-div {
+        width: 95%;
+    }
 }
+
+
 
 /* Game page */
 
