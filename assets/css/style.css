@@ -48,7 +48,6 @@ body {
 
 .home-box {
     background-color: #fafafa;
-    /* width: 100%; */
     border-radius: 20px;
     min-height: 90%;
     padding-bottom: 30px;
@@ -87,6 +86,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* font-size: 30px; */
+}
+
+.button-text p {
+    margin: 0;
+    text-align: center;
 }
 
 .opacity {
@@ -374,13 +379,8 @@ body {
 
     .home-wrapper {
         width: 60%;
-        min-height: 80px;
-        height: 50%;
+        min-height: 50%;
         margin-top: 25px;
-    }
-
-    .button-text p {
-        font-size: 30px;
     }
 }
 
@@ -395,8 +395,13 @@ body {
         display: none;
     }
 
-    .background {
+    .background,
+    #setup-background {
         padding: 3% 5%;
+    }
+
+    .button-text {
+        font-size: 24px;
     }
 
 }
@@ -413,6 +418,17 @@ body {
 
 /* Setup page */
 
+
+@media screen and (min-width: 1200px) {
+    .button-text p {
+        font-size: 30px;
+    }
+
+    .setup-div {
+        row-gap: 40px;
+    }
+}
+
 @media screen and (max-width: 786px) {
 
     .setup-div {
@@ -427,6 +443,28 @@ body {
 
 
 /* Game page */
+
+@media screen and (max-width: 850px) {
+    .nav {
+        flex-flow: wrap-reverse;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #game-house {
+        order: 1;
+    }
+
+    #logo {
+        order: 3;
+    }
+
+    #rules-link {
+        order: 2;
+    }
+
+}
+
 
 @media screen and (max-width: 425px) {
 
