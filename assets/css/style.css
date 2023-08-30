@@ -49,8 +49,8 @@ body {
 .home-box {
     background-color: #fafafa;
     border-radius: 20px;
-    min-height: 90%;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 
 .home-text {
@@ -457,6 +457,8 @@ body {
 
     #logo {
         order: 3;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #rules-link {
@@ -464,6 +466,7 @@ body {
     }
 
 }
+
 
 
 @media screen and (max-width: 425px) {
