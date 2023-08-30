@@ -95,7 +95,7 @@ function userSubmit() {
 
 //Replaces the game HTML with the score page
 function gameOver() {
-    document.getElementById("question").innerHTML = `WOOHOO! You got: ${game.score} / ${q}`;
+    document.getElementById("question").innerHTML = `WOOHOO! You got: ${game.score}/${q}`;
     document.getElementById("question").style.fontSize = "40px";
     document.getElementById("answer-div-one").style.display = "none";
     document.getElementById("answer-div-two").style.display = "none";
@@ -158,6 +158,9 @@ document.getElementById("rules-link").onclick = function seeRules() {
 async function main() {
     //Waits for the page to load, so Javascript can find the value of q before using it in the getQuestions function
     await getQuestions()
+
+    //Adds the rules modal to the game page
+    document.getElementById("rules-link").style.display = "flex";
 
     //Asks for the first question
     getNewQuestion()

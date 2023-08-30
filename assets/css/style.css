@@ -13,12 +13,24 @@ body {
 }
 
 .nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "house logo rules";
+}
+
+
+#house {
+    grid-area: house;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
 }
+
+#logo {
+    grid-area: logo;
+}
+
+
 
 .nav a {
     text-decoration: none;
@@ -92,6 +104,7 @@ body {
 .button-text p {
     margin: 0;
     text-align: center;
+    font-size: 30px;
 }
 
 .opacity {
@@ -185,14 +198,19 @@ body {
     background-color: #a3d9ca;
     text-align: center;
     width: 64px;
-    padding: 10px 0;
+    max-height: 40px;
+    margin-top: 27px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-right: 50px;
 }
 
 #rules-link:hover {
     cursor: pointer;
 }
 
-#rules-link p,
 #play-again-link p {
     margin: 0;
 }
@@ -223,7 +241,7 @@ body {
 #question {
     margin-left: 5%;
     margin-right: 5%;
-    height: 75px;
+    min-height: 75px;
 }
 
 #score {
@@ -361,6 +379,17 @@ body {
 
 @media screen and (max-width: 850px) {
 
+    .nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logo logo""house rules";
+    }
+
+    #house {
+        justify-content: flex-end;
+        margin-right: 10px;
+        margin-right: 0;
+    }
+
     .fa-house-chimney {
         font-size: 30px;
     }
@@ -385,15 +414,6 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-    .nav {
-        flex-direction: column-reverse;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #format-div {
-        display: none;
-    }
 
     .background,
     #setup-background {
@@ -420,16 +440,13 @@ body {
 
 
 @media screen and (min-width: 1200px) {
-    .button-text p {
-        font-size: 30px;
-    }
 
     .setup-div {
         row-gap: 40px;
     }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 850px) {
 
     .setup-div {
         grid-template-columns: 1fr;
@@ -444,30 +461,11 @@ body {
 
 /* Game page */
 
-@media screen and (max-width: 850px) {
-    .nav {
-        flex-flow: wrap-reverse;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    #game-house {
-        order: 1;
-    }
-
-    #logo {
-        order: 3;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
+@media screen and (min-width: 851px) {
     #rules-link {
-        order: 2;
+        justify-self: right;
     }
-
 }
-
-
 
 @media screen and (max-width: 425px) {
 
@@ -487,13 +485,28 @@ body {
     .button-text li {
         margin: 10px 0;
     }
+
+    #game-answers {
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        row-gap: 20px;
+    }
+
+    .home-box {
+        padding-bottom: 20px;
+    }
+
+    .button-text p {
+        font-size: 22px;
+    }
 }
 
 
 
 /* Score page */
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 850px) {
 
     #game-answers {
         grid-template-columns: 1fr;
@@ -501,5 +514,11 @@ body {
 
     .answer-list {
         height: auto;
+    }
+
+    #rules-link {
+        grid-area: rules;
+        margin-left: 10px;
+        margin-top: auto;
     }
 }
