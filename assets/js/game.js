@@ -53,6 +53,23 @@ function getNewQuestion() {
     document.getElementById("answer-three").innerHTML = answers[2];
     document.getElementById("answer-four").innerHTML = answers[3];
     document.getElementById("score").innerHTML = `Score: ${game.score} / ${q}`;
+
+    console.log(answers[0]);
+    console.log(answers[0].length);
+
+    // if (answers[0].length > 25) {
+    //     document.getElementById("answer-one").style.fontSize = "18px";
+    // }
+    // if (answers[1].length > 25) {
+    //     document.getElementById("answer-two").style.fontSize = "18px";
+    // }
+    // if (answers[2].length > 25) {
+    //     document.getElementById("answer-three").style.fontSize = "18px";
+    // }
+    // if (answers[3].length > 25) {
+    //     document.getElementById("answer-four").style.fontSize = "18px";
+    // }
+
 }
 
 //Fuction for the users turn
