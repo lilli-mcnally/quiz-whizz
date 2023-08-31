@@ -179,7 +179,7 @@ body {
 }
 
 .setup-wrapper {
-    height: 200px;
+    min-height: 200px;
     width: 65%;
 }
 
@@ -499,7 +499,7 @@ body {
     }
 
     .setup-wrapper {
-        height: 100px;
+        min-height: 100px;
     }
 }
 
@@ -510,7 +510,7 @@ body {
     }
 
     .setup-wrapper {
-        height: 75px;
+        min-height: 75px;
     }
 
 }
@@ -521,6 +521,34 @@ body {
 @media screen and (min-width: 851px) {
     #rules-link {
         justify-self: right;
+    }
+
+    #answer-one,
+    #answer-two,
+    #answer-three,
+    #answer-four {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    #answer-div-one,
+    #answer-div-two,
+    #answer-div-three,
+    #answer-div-four {
+        width: 75%
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #answer-div-one,
+    #answer-div-two,
+    #answer-div-three,
+    #answer-div-four {
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -559,7 +587,19 @@ body {
     }
 }
 
+@media screen and (min-width: 1200px) {
 
+    #answer-one,
+    #answer-two,
+    #answer-three,
+    #answer-four {
+        font-size: 28px;
+    }
+
+    #score {
+        font-size: 46px;
+    }
+}
 
 /* Score page */
 
