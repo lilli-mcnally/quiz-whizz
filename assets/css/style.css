@@ -530,3 +530,15 @@ body {
         margin-top: auto;
     }
 }
+
+/* Rules Page */
+
+@media screen and (max-width: 850px) {
+    .rules-text h4 {
+        font-size: 30px;
+    }
+
+    .rules-text ol {
+        font-size: 18px;
+    }
+}
