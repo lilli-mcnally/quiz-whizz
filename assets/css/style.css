@@ -19,11 +19,10 @@ body {
 }
 
 
-#house {
+.house {
     grid-area: house;
     display: flex;
     align-items: center;
-    margin-left: 50px;
 }
 
 #logo {
@@ -183,7 +182,6 @@ body {
 }
 
 /* Game page */
-
 #game-house {
     margin-right: 12px;
     margin-left: 12px;
@@ -380,13 +378,23 @@ body {
 @media screen and (max-width: 850px) {
 
     .nav {
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo""house";
+    }
+
+    #game-nav {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "logo logo""house rules";
     }
 
-    #house {
+    #game-house {
         justify-content: flex-end;
-        margin-right: 10px;
+        margin-left: 50px;
+    }
+
+    .house {
+        justify-content: center;
+        /* margin-right: 10px; */
         margin-right: 0;
     }
 
@@ -479,11 +487,11 @@ body {
     }
 
     .button-text ol {
-        margin-top: 0;
+        margin: 0;
     }
 
-    .button-text li {
-        margin: 10px 0;
+    .button-text ol li {
+        margin: 15px 0;
     }
 
     #game-answers {
