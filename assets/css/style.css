@@ -8,8 +8,16 @@ body {
 }
 
 .fa-house-chimney {
-    font-size: 35px;
-    color: #000;
+    font-size: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.fa-house-chimney:hover {
+    border-color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .nav {
@@ -78,6 +86,7 @@ body {
     margin: 30px 0 0 0;
     height: 45vh;
     overflow-y: unset;
+    min-height: 75px;
 }
 
 .buttons-wrapper {
@@ -88,7 +97,6 @@ body {
 }
 
 .home-wrapper {
-    height: 100%;
     width: 35%;
 }
 
@@ -118,6 +126,7 @@ body {
 
 .play:hover {
     background: url(../images/question-marks.png) no-repeat center center;
+    background-size: cover;
 }
 
 .rules {
@@ -126,6 +135,7 @@ body {
 
 .rules:hover {
     background: url(../images/pencils.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 /* Setup page */
@@ -359,7 +369,7 @@ body {
 
 
 
-/* RESPONSIVE DESIGN */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ RESPONSIVE DESIGN */
 
 /* Home page */
 
@@ -368,6 +378,11 @@ body {
 
     .nav-text {
         font-size: 55px;
+    }
+
+    .fa-house-chimney {
+        font-size: 35px;
+        color: #000;
     }
 
     .home-text {
@@ -410,6 +425,7 @@ body {
 
     .home-box {
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #button-div {
@@ -417,13 +433,15 @@ body {
         justify-content: normal;
         align-items: center;
         margin: 0;
-        height: 50%;
+        height: 75vh;
+        min-height: 200px;
     }
 
     .home-wrapper {
         width: 60%;
-        min-height: 50%;
         margin-top: 25px;
+        height: 45%;
+        min-height: 75px;
     }
 
     .home-text {
@@ -444,6 +462,11 @@ body {
         font-size: 24px;
     }
 
+    .home-text {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -454,7 +477,7 @@ body {
 
 @media screen and (min-width: 2000px) {
     .nav-text {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .house i {
@@ -462,11 +485,11 @@ body {
     }
 
     .home-text {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .button-text p {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -580,10 +603,6 @@ body {
         margin-left: 5px;
         margin-right: 5px;
         row-gap: 20px;
-    }
-
-    .home-box {
-        padding-bottom: 20px;
     }
 
     .button-text p {
