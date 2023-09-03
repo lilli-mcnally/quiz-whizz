@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 
 /* ----------------------------------------------------------- General Styling */
 
@@ -56,7 +56,7 @@ body {
 /* ----------------------------------------------------------- Home page */
 
 .background {
-    background: url(../images/popcorn.webp) no-repeat center center;
+    background: url("../images/popcorn.webp") no-repeat center center;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -124,7 +124,7 @@ body {
 }
 
 .play:hover {
-    background: url(../images/question-marks.webp) center center;
+    background: url("../images/question-marks.webp") center center;
     background-size: 200%;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .rules:hover {
-    background: url(../images/pencils.webp) center center;
+    background: url("../images/pencils.webp") center center;
     background-size: 100%;
 }
 
