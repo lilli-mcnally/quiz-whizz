@@ -44,6 +44,10 @@ function getNewQuestion() {
     game.four = game.questions[game.index].incorrect_answers[2];
     game.answers = [game.one, game.two, game.three, game.four];
 
+    //Assigns the correct answer with correct punctuation to a div, for selected answer to be checked against later
+    document.getElementById("correct-answer").innerHTML = game.questions[game.index].correct_answer;
+
+
     //Sorts the answers into alphabetical order. This also functions as shuffling the answers
     answers = game.answers.sort();
 
@@ -53,23 +57,6 @@ function getNewQuestion() {
     document.getElementById("answer-three").innerHTML = answers[2];
     document.getElementById("answer-four").innerHTML = answers[3];
     document.getElementById("score").innerHTML = `Score: ${game.score} / ${q}`;
-
-    console.log(answers[0]);
-    console.log(answers[0].length);
-
-    // if (answers[0].length > 25) {
-    //     document.getElementById("answer-one").style.fontSize = "18px";
-    // }
-    // if (answers[1].length > 25) {
-    //     document.getElementById("answer-two").style.fontSize = "18px";
-    // }
-    // if (answers[2].length > 25) {
-    //     document.getElementById("answer-three").style.fontSize = "18px";
-    // }
-    // if (answers[3].length > 25) {
-    //     document.getElementById("answer-four").style.fontSize = "18px";
-    // }
-
 }
 
 //Fuction for the users turn
@@ -86,13 +73,13 @@ function userSubmit() {
             let answer = document.getElementById(move).innerHTML;
 
             //Checks if the answer selected matches correct answer provided by the API
-            if (answer == game.questions[game.index].correct_answer) {
+            if (answer == document.getElementById("correct-answer").innerHTML) {
                 game.score++
                 document.getElementById("score").innerHTML = `Score: ${game.score} / ${q}`;
             }
 
             //Adds the correct answer for this question to an array
-            game.correct.push(game.questions[game.index].correct_answer);
+            game.correct.push(document.getElementById("correct-answer").innerHTML);
 
             //Adds the answer chosen by the user to an array
             game.selected.push(answer);

@@ -48,7 +48,7 @@ body {
 /* Home page */
 
 .background {
-    background: url("../images/cinema.jpg") no-repeat center center;
+    /* background: url("../images/cinema.jpg") no-repeat center center; */
     background-size: cover;
     position: fixed;
     top: 0;
@@ -315,6 +315,10 @@ body {
 #modal-h4 {
     font-size: 40px;
     margin: 0;
+}
+
+#correct-answer {
+    display: none;
 }
 
 /* Rules page */
