@@ -15,9 +15,9 @@ body {
 }
 
 .fa-house-chimney:hover {
-    border-color: #fff;
+    border-color: #fafafa;
     background-color: #000;
-    color: #fff;
+    color: #fafafa;
 }
 
 .nav {
@@ -32,7 +32,9 @@ body {
 .house {
     grid-area: house;
     display: flex;
+    justify-self: center;
     align-items: center;
+    align-self: center;
 }
 
 #logo {
@@ -107,7 +109,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 30px; */
 }
 
 .button-text p {
@@ -179,6 +180,8 @@ body {
     color: #fff;
 }
 
+
+
 .rules-setup {
     background-color: #a3d9ca;
 }
@@ -194,11 +197,6 @@ body {
 }
 
 /* Game page */
-#game-house {
-    margin-right: 12px;
-    margin-left: 12px;
-}
-
 .games-links {
     border-radius: 5px;
     display: inline-block;
@@ -207,18 +205,21 @@ body {
 #rules-link {
     background-color: #a3d9ca;
     text-align: center;
-    width: 64px;
-    max-height: 40px;
-    margin-top: 27px;
     display: none;
+    justify-self: center;
     align-items: center;
-    justify-content: center;
-    float: right;
-    margin-right: 50px;
+    align-self: center;
+    height: 55px;
 }
 
 #rules-link:hover {
     cursor: pointer;
+    background-color: #fafafa;
+    border: 2px solid #a3d9ca;
+}
+
+#rules-link p {
+    margin: 5px;
 }
 
 #play-again-link p {
@@ -331,6 +332,10 @@ body {
     display: none;
 }
 
+#rules-link {
+    font-size: 20px;
+}
+
 /* Rules page */
 
 .rules-div {
@@ -386,7 +391,7 @@ body {
     }
 
     .home-text {
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 30px;
     }
 
@@ -407,11 +412,12 @@ body {
     #game-nav {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "logo logo""house rules";
+        margin-bottom: 20px;
     }
 
     #game-house {
-        justify-content: flex-end;
-        margin-left: 50px;
+        justify-self: flex-end;
+        margin-right: 30px;
     }
 
     .house {
@@ -435,6 +441,7 @@ body {
         margin: 0;
         height: 75vh;
         min-height: 200px;
+        max-height: 500px;
     }
 
     .home-wrapper {
@@ -458,7 +465,7 @@ body {
         padding: 3% 5%;
     }
 
-    .button-text {
+    .button-text p {
         font-size: 24px;
     }
 
@@ -498,20 +505,9 @@ body {
 /* Setup page */
 
 @media screen and (min-width: 1200px) {
-    .setup-wrapper {
-        height: 300px;
-    }
-
-    .button-text {
-        font-size: 50px;
-    }
-}
-
-
-@media screen and (min-width: 1200px) {
 
     .setup-div {
-        row-gap: 40px;
+        row-gap: 50px;
     }
 }
 
@@ -534,21 +530,18 @@ body {
 
     .setup-div {
         margin-top: 20px;
+        row-gap: 40px;
     }
 
     .setup-wrapper {
-        min-height: 75px;
+        min-height: 70px;
     }
-
 }
 
 
 /* Game page */
 
 @media screen and (min-width: 851px) {
-    #rules-link {
-        justify-self: right;
-    }
 
     #answer-one,
     #answer-two,
@@ -556,6 +549,7 @@ body {
     #answer-four {
         font-size: 24px;
     }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -622,6 +616,12 @@ body {
     #score {
         font-size: 46px;
     }
+
+    #rules-link {
+        font-size: 25px;
+        width: auto;
+    }
+
 }
 
 /* Score page */
@@ -638,8 +638,9 @@ body {
 
     #rules-link {
         grid-area: rules;
-        margin-left: 10px;
         margin-top: auto;
+        justify-self: flex-start;
+        margin-left: 30px;
     }
 }
 
@@ -651,6 +652,32 @@ body {
     }
 
     .rules-text ol {
+        font-size: 20px;
+    }
+
+    .rules-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .rules-text ol {
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .rules-text ol {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .rules-text h4 {
+        font-size: 50px;
+    }
+
+    .rules-text ol {
+        font-size: 30px;
     }
 }
