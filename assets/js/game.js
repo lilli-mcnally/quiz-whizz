@@ -169,9 +169,6 @@ async function main() {
     //Asks for the first question
     getNewQuestion()
 
-    //Logs the questions to the console
-    console.log(game.questions)
-
     //Applies the Event Listeners and waits for the user to choose an answer
     userSubmit()
 
