@@ -126,8 +126,8 @@ body {
 }
 
 .play:hover {
-    background: url(../images/question-marks.png) no-repeat center center;
-    background-size: cover;
+    background: url(../images/question-marks.png) center center;
+    background-size: 200%;
 }
 
 .rules {
@@ -135,8 +135,8 @@ body {
 }
 
 .rules:hover {
-    background: url(../images/pencils.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../images/pencils.jpg) center center;
+    background-size: 100%;
 }
 
 /* Setup page */
@@ -251,8 +251,9 @@ body {
     min-height: 75px;
 }
 
+#question,
 #score {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #answers-title {
@@ -379,7 +380,7 @@ body {
 /* Home page */
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
 
     .nav-text {
         font-size: 55px;
@@ -402,6 +403,14 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
+    .play:hover {
+        background-size: 200%;
+    }
+
+    .rules:hover {
+        background-size: 100%;
+    }
 
     .nav {
         grid-template-columns: 1fr;
@@ -439,13 +448,13 @@ body {
         justify-content: normal;
         align-items: center;
         margin: 0;
-        height: 75vh;
+        height: 50vh;
         min-height: 200px;
         max-height: 500px;
     }
 
     .home-wrapper {
-        width: 60%;
+        width: 70%;
         margin-top: 25px;
         height: 45%;
         min-height: 75px;
@@ -474,11 +483,41 @@ body {
         margin-right: 5px;
     }
 
+    .play:hover {
+        background-size: 200%;
+    }
+
+    .rules:hover {
+        background-size: 100%;
+    }
+
+    .home-wrapper {
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     .nav-text {
         font-size: 45px;
+    }
+
+    .play:hover {
+        background-size: 300%;
+    }
+
+    .rules:hover {
+        background-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .play:hover {
+        background-size: 200%;
+    }
+
+    .rules:hover {
+        background-size: 100%;
     }
 }
 
@@ -497,6 +536,14 @@ body {
 
     .button-text p {
         font-size: 35px;
+    }
+
+    .play:hover {
+        background-size: 225%;
+    }
+
+    .rules:hover {
+        background-size: 125%;
     }
 }
 
@@ -560,9 +607,15 @@ body {
     #answer-div-four {
         width: 75%
     }
+
+    #question,
+    #score {
+        font-size: 20px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 425px) {
 
     #answer-div-one,
     #answer-div-two,
@@ -571,9 +624,6 @@ body {
         width: 90%;
         height: auto;
     }
-}
-
-@media screen and (max-width: 425px) {
 
     #modal-header {
         margin: 0 10px;
@@ -613,13 +663,18 @@ body {
         font-size: 28px;
     }
 
+    #question,
     #score {
-        font-size: 46px;
+        font-size: 30px;
     }
 
     #rules-link {
         font-size: 25px;
         width: auto;
+    }
+
+    #modal-h4 {
+        font-size: 50px;
     }
 
 }
