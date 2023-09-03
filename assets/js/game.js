@@ -109,11 +109,11 @@ function gameOver() {
     document.getElementById("score").style.display = "none";
     document.getElementById("play-again-link").style.display = "flex";
 
+    // Creates a new div for the game answers to tell user if they chose right or wrong
     let gameAnswers = document.createElement("div")
     gameAnswers.setAttribute("id", "game-answers");
 
-    // gameAnswers.className = "setup-div";
-    // let answerTitle = document.createElement("p");
+    // Makes the "answers-title" visible
     document.getElementById("answers-title").style.display = "block";
 
     //Iterates through each value in the "selected" array
@@ -123,7 +123,6 @@ function gameOver() {
         let answerList = document.createElement("p");
 
         //Appends the "p" to the div with the ID of"game-area"
-        // gameAnswers.appendChild(answerList);
         gameAnswers.appendChild(answerList)
 
         //Checks if each value in the selected array matches the value of the same index in the correct array
@@ -143,16 +142,21 @@ function gameOver() {
             answerList.className = "answer-list";
             answerList.style.color = "#9e0202";
         }
+
+        // Sets the "game-answers" div as a child of the "answers-div"
         document.getElementById("answers-div").appendChild(gameAnswers)
     }
 }
 
+// An event listener that makes the Rules modal visible / invisible
 document.getElementById("rules-link").onclick = function seeRules() {
     let rulesModal = document.getElementById("rules-modal");
     let close = document.getElementById("close");
 
+    // Makes the Rules modal visible
     rulesModal.style.display = "block";
 
+    //Makes the Rules modal invisible
     close.onclick = function () {
         rulesModal.style.display = "none";
     }
