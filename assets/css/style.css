@@ -8,16 +8,12 @@ body {
 }
 
 .fa-house-chimney {
-    font-size: 30px;
-    color: #000;
     background-color: #C5B4E9;
-    border-radius: 50%;
-    padding: 8px;
 }
 
 .fa-house-chimney:hover {
-    background-color: #fafafa;
     border: 4px solid #C5B4E9;
+    background-color: #fafafa;
 }
 
 .nav {
@@ -63,14 +59,50 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;
-
 }
 
 .footer-social {
-    color: #000;
-    font-size: 20px;
+    font-size: 30px;
+    border-radius: 50%;
 }
 
+.footer-social a {
+    color: #000;
+}
+
+#social-f:hover,
+#social-i:hover,
+#social-y:hover,
+#social-x:hover {
+    background-color: #fafafa;
+}
+
+
+#social-f {
+    background-color: #92C1F1;
+    border: 4px solid #92C1F1;
+    width: 30px;
+}
+
+#social-f:before {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#social-i {
+    background-color: #C5B4E9;
+    border: 4px solid #C5B4E9;
+}
+
+#social-y {
+    background-color: #FFD87B;
+    border: 4px solid #FFD87B;
+}
+
+#social-x {
+    background-color: #a3d9ca;
+    border: 4px solid #a3d9ca;
+}
 
 
 /* ----------------------------------------------------------- Home page */
