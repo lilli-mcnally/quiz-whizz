@@ -80,6 +80,77 @@ I have chosen to create the website with five different pages. This is so that t
 - [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
 - [Prototype Game page](/assets/images/readme/wireframes-and-prototype/game-page-prototype.PNG "Prototype Game page")
 
+## Features
+
+#### Logo and Favicon
+
+I created the Logo myself on [Canva](https://www.canva.com/) using the [ColorSpace](https://mycolor.space/) website to help me find the right shade of peach.
+
+![Logo](/assets/images/readme/features/feature-logo.webp "Logo")
+
+I also created an amended version without the text, and converted this to an icon using [Favicon.io](https://favicon.io/) to use as my Favicon.
+
+![Favicon](/assets/images/readme/features/feature-favicon.webp "Favicon")
+
+#### Navbar
+
+The Navbar features three colourful buttons directing you to the three pages across the site: the Home Page, the Setup page, and the Rules page. 
+
+![Navbar](/assets/images/readme/features/feature-navbar.webp "Navbar")
+
+All three buttons the same border radius and hover quality - changing the background colour to white. I kept the colours in the Navbar consistent across the site (e.g. Rules buttons are always green, Play buttons are always Yellow) for a better user experience.
+
+![Navbar Hover](/assets/images/readme/features/feature-navbar-hover.webp "Navbar Hover")
+
+#### Play and Rules buttons
+
+On the Home page, I created two large buttons for users to choose to either check the rules, or move to the Setup page. The two div's have background colours that have a matching hex to the the background image used as their hover quality. 
+
+![Play button](/assets/images/readme/features/feature-play.webp "Play button")
+![Play button hover](/assets/images/readme/features/feature-play-hover.webp "Play button hover")
+![Rules button](/assets/images/readme/features/feature-rules.webp "Rules button")
+![Rules button hover](/assets/images/readme/features/feature-rules-hover.webp "Rules button hover")
+
+This creates the effect of the pencils or question marks appearing and disappearing when the user hover over or off.
+
+#### Footer
+
+The footer has the four social media links. It also features a "Contact the developer" email address.
+
+![Footer](/assets/images/readme/features/feature-footer.webp "Footer")
+
+#### Rules Page and Modal
+
+I wanted the Rules to be accessible from anywhere on the site, so I created a Rules page in HTML and a Rules Modal using Javascript. Both are a simplistic div with the a green border, and six easy to read rules of how to play the game.
+
+![Rules Page](/assets/images/readme/features/feature-rules-page.webp "Rules Page")
+
+The Modal has a close button so the user can open and close it with ease.
+
+![Rules Modal](/assets/images/readme/features/feature-rules-modal.webp "Rules Modal")
+
+#### Setup Page
+
+The setup page has four options. Three are to decide how many questions to request from the API and present to the user, and the final one is a link back to the Rules page. Each button has a hover quality to make the colour of of the div a bit darker, demonstrated below on the Rules div.
+
+![Setup Page](/assets/images/readme/features/feature-setup.webp "Setup Page")
+
+#### Game Page
+
+The Game page has a score that increments when the user answers correctly as the game is played. The question is called and presented to the user, and then four divs below have the possible answers.
+
+![Game Page](/assets/images/readme/features/feature-game.webp "Game Page")
+
+#### Score Page
+
+Finally the score page shows the users final score once the game has finished. 
+
+![Score Page](/assets/images/readme/features/feature-final-score.webp "Score Page")
+
+It also tells the user which questions they got right and which were wrong, with colour coding and a tick or cross to match. I did consider presenting the user with the correct answer at this point, however my mentor Mitko Bachvarov advised not revealing the answer would mean the user is more likely to play again.
+
+![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")
+
 ## Fixed Bugs
 
 #### Score Page
@@ -152,6 +223,8 @@ The final problem was the ovals. I used Developer Tools to look at each icon, an
 
 ![Social links circles fixed](/assets/images/readme/bugs/socials-fix.webp "Social links circles fixed")
 
+I later decided to change the circles to a rounded-corner square, so the social links background were consistent with the rest of the site.
+
 #### Jest Testing
 
 I had an issue getting my Jest Testing to work properly. I used the boilerplate set up code for Jest Testing from the learning module provided by [Code Institute](https://codeinstitute.net/). I added my first test, and tested and recieved an error.
@@ -177,6 +250,14 @@ Unfortunately, fixing the Jest Testing bug meant that the game Javascript file n
 The only way to fix this was to complete the Jest Testing, and then remove both `const fetch = require("node-fetch")` from the top and `module.exports = { game };` from the bottom of the game.js file. 
 
 Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.
+
+## Deployment
+
+This site was built on Gitpo. I've used git add, commit and push to publish it on Github.
+
+To deploy the site, I firstly went logged into Github and opened the Repository. I clicked "Settings" and then selected "Pages" on the left side of the screen.
+
+Then, under "Branch" I chose "Main", and clicked Save.
 
 ## Credits
 
