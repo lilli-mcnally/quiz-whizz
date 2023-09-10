@@ -2,6 +2,8 @@
  * Checks the URL in the browser for the value of "q".
  * "q" is given a value when the user chooses how many questions they want the game to have.
  */
+const fetch = require("node-fetch")
+
 let params = new URLSearchParams(document.location.search);
 let q = params.get("q");
 
@@ -163,3 +165,7 @@ async function main() {
 
 //Runs the startup for the game when the page first loads
 main()
+
+module.exports = {
+    game
+};

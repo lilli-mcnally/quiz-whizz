@@ -1,0 +1,28 @@
+{
+  "name": "quiz-whizz",
+  "version": "1.0.0",
+  "description": "## Purpose and Value ### User goals - To play a quiz game about films and test their knowledge Website goals - For the user to find the format and layout of the quiz website obvious and easy to navigate - To provide a fun game with 10 – 50 questions about films to users",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilli-mcnally/quiz-whizz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilli-mcnally/quiz-whizz/issues"
+  },
+  "homepage": "https://github.com/lilli-mcnally/quiz-whizz#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "babel-jest": "^29.6.4",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
