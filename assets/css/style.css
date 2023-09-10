@@ -723,11 +723,6 @@ footer p {
         margin-bottom: 20px;
     }
 
-    #game-house {
-        justify-self: flex-end;
-        margin-right: 30px;
-    }
-
     #answer-div-one,
     #answer-div-two,
     #answer-div-three,

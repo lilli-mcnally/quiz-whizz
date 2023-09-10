@@ -111,8 +111,6 @@ On the Home page, I created two large buttons for users to choose to either chec
 ![Rules button](/assets/images/readme/features/feature-rules.webp "Rules button")
 ![Rules button hover](/assets/images/readme/features/feature-rules-hover.webp "Rules button hover")
 
-This creates the effect of the pencils or question marks appearing and disappearing when the user hover over or off.
-
 #### Footer
 
 The footer has the four social media links. It also features a "Contact the developer" email address.
@@ -150,6 +148,49 @@ Finally the score page shows the users final score once the game has finished.
 It also tells the user which questions they got right and which were wrong, with colour coding and a tick or cross to match. I did consider presenting the user with the correct answer at this point, however my mentor Mitko Bachvarov advised not revealing the answer would mean the user is more likely to play again.
 
 ![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")
+
+## Design
+
+#### Colours
+I chose to make this project really colourful, but also associated colours with parts of the website for an easy user experience. I chose the following a peach colour for the logo, and four neutral pastel colours to feature on buttons.
+
+![Colour Scheme](/assets/images/readme/colour-scheme.webp "Colour Scheme")
+
+I used `#fafafa` for background hover qualities so the transition from colour to white wasn't too stark. I also used an off white with a transparency feature for the main div on top of the background, which I think went very well with the fixed background image.
+
+![Main div transparency](/assets/images/readme/design/design-main-div.webp "Main div transparency")
+
+I also chose to add a feature to the Javascript so that when the answers are given at the end, the correct answers are coloured green, and the incorrect answers are coloured red.
+
+![Green and red answers](/assets/images/readme/design/design-answers.webp "Green and red answers")
+
+#### Typography
+Throughout this site I used `Preahvihear` as the primary font, which I found on [Google Fonts](https://fonts.google.com/specimen/Preahvihear). I chose this font because it's fun and quirky, but also easy to interpret and looks great written in questions. The backup font `Preahvihear` is `sans-serif`.
+
+![Preahvihear font](/assets/images/readme/design/design-Preahvihear.webp "Preahvihear font")
+
+For the Logo, designed on [Canva](https://www.canva.com/), I chose the font `Pluma`. It's also fun a quirky but was a little more dramatic for a great logo font.
+
+![Pluma font](/assets/images/readme/features/feature-logo.webp "Pluma font")
+
+#### Imagery
+The Play and Rules buttons on the home page also have great images. As mentioned previously, I specifically chose the background colour of the div's to match the background colour in the two images used for the hover property. This creates the effect of the pencils or question marks appearing and disappearing when the user hover over or off.
+
+I chose the social media links, as well as the ticks and crosses for the answer section, from [Font Awesome](https://fontawesome.com/).
+
+![Font Awesome social links](/assets/images/readme/features/feature-footer.webp "Font Awesome social links")
+
+#### Styling
+Throughout the website, I chose to have coloured square boxes with rounded corners. This is consistent in everything from the Logo to the Footer social links. I chose this to give the website an overall modern and aesthetically pleasing look.
+
+![Rounded corners](/assets/images/readme/design/design-edges.webp "Rounded corners")
+
+#### Backgrounds
+The main background across the website is an image of popcorn. I originally chose an image of a cinema, to go with the movie theme. However, the more I worked on the project, the more I felt the cinema image made the website look dark and dreary, and it didn't suit the colourful pastel divs I'd added to the rest of the site. I decided to go for a lighter image, and as popcorn and movies go hand in hand, I found this great picture of popcorn taken by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE).
+
+I chose to change the background colour of the Footer to a very light grey. I wanted it to be a different colour to the other divs on the website, and choosing a light grey meant I didn't add too many colour variations.
+
+![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")
 
 ## Fixed Bugs
 
