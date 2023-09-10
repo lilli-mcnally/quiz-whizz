@@ -25,12 +25,40 @@
                     <p>Home</p>
                 </a>
                 <!-- Play button -->
-                <a href="index.html" id="play-nav" class="nav-text">
+                <a href="setup.html" id="play-nav" class="nav-text">
                     <p>Play</p>
                 </a>
                 <!-- Link for Rules Modal -->
                 <div id="rules-link" class="nav-text">
                     <p>Rules</p>
+                </div>
+            </div>
+            <div id="rules-modal">
+                <div class="rules-div" id="game-rules-div">
+                    <div class="rules-wrapper">
+                        <div id="modal-header">
+                            <!-- Invisibile span used to format the three flex items -->
+                            <span></span>
+                            <!-- Rules Modal Heading -->
+                            <h4 id="modal-h4">Rules</h4>
+                            <!-- Modal close button -->
+                            <div><i class="fa-solid fa-xmark" id="close"></i></div>
+                        </div>
+                        <!--Ordered list of the rules-->
+                        <div class="button-text rules-text">
+                            <ol>
+                                <li>Choose the number of questions you want. You can choose 10, 25 or 50 questions!</li>
+                                <li>Each question has four possible answers. Select the answer you think is right by
+                                    clicking on it</li>
+                                <li>If you got it right, you get 1 point added to your score</li>
+                                <li>At the end of the quiz, you get to see your final score, and which answers were
+                                    right or
+                                    wrong</li>
+                                <li>Click the Play Again button to play the quiz again</li>
+                                <li>If you get stuck, just click the Rules button at any time</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
             <p class="home-text">Test your film knowledge with our 10, 25 and 50 question quizzes!</p>
@@ -67,6 +95,7 @@
             </footer>
         </div>
     </div>
+    <script src="assets/js/modal.js" type="text/javascript"></script>
 </body>
 
 </html>

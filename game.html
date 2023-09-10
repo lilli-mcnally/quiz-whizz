@@ -14,16 +14,22 @@
     <div class="background" id="setup-background">
         <!-- Central white box -->
         <div class="home-box">
+            <!-- "Quiz Whizz" Logo-->
+            <a href="index.html" id="logo">
+                <img id="logo-image" src="assets/images/logo.webp">
+            </a>
             <!-- Nav bar -->
-            <div class="nav" id="game-nav">
-                <!-- Home icon -->
-                <a href="index.html" class="house"><i class="fa-solid fa-house-chimney footer-social"></i></a>
-                <!-- "Quiz Whizz" Logo-->
-                <a href="index.html" id="logo">
-                    <h1 class="nav-text">Quiz Whizz</h1>
+            <div class="nav">
+                <!-- Home button -->
+                <a href="index.html" id="home-nav" class="nav-text">
+                    <p>Home</p>
+                </a>
+                <!-- Play button -->
+                <a href="setup.html" id="play-nav" class="nav-text">
+                    <p>Play</p>
                 </a>
                 <!-- Link for Rules Modal -->
-                <div id="rules-link" class="games-links">
+                <div id="rules-link" class="nav-text">
                     <p>Rules</p>
                 </div>
             </div>
@@ -112,4 +118,5 @@
         </div>
     </div>
     <script src="assets/js/game.js" type="text/javascript"></script>
+    <script src="assets/js/modal.js" type="text/javascript"></script>
 </body>
