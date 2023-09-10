@@ -7,15 +7,6 @@ body {
     color: #000;
 }
 
-.fa-house-chimney {
-    background-color: #C5B4E9;
-}
-
-.fa-house-chimney:hover {
-    border: 4px solid #C5B4E9;
-    background-color: #fafafa;
-}
-
 .nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -64,32 +55,36 @@ body {
 .footer-social {
     font-size: 30px;
     border-radius: 50%;
-}
-
-.footer-social a {
-    color: #000;
+    padding: 5px;
 }
 
 #social-f:hover,
 #social-i:hover,
 #social-y:hover,
-#social-x:hover {
+#social-x:hover,
+.fa-house-chimney:hover {
     background-color: #fafafa;
+}
+
+#social-f,
+#social-i,
+#social-y,
+#social-x {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    color: #000;
 }
 
 
 #social-f {
     background-color: #92C1F1;
     border: 4px solid #92C1F1;
-    width: 30px;
 }
 
-#social-f:before {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#social-i {
+#social-i,
+.fa-house-chimney {
     background-color: #C5B4E9;
     border: 4px solid #C5B4E9;
 }
