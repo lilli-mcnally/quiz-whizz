@@ -192,12 +192,47 @@ I chose to change the background colour of the Footer to a very light grey. I wa
 
 ![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")
 
+## Responsive Design
+#### 4K Screens
+On largest screens up to 2560px, the background image is consistently filling the whole page. The main div with a white background adjusts according to screen size easily as well. Rules and Play buttons height is dependant on the view height. The gap between each Navbar element also adjusts easily, and the same is for each Footer social element. The text at the top of the page and footer are both centrally aligned and adjust to size.
+
+On the Game and Setup pages, the four divs in the centre are well spaced and have good gaps between them. On the Score page, the Answers secton fills the centre gap and the grid inside holding the answers adjusts it's margins to the size of the screen. 
+
+The Rules page fills the page width with a small margin on the left and right. The Rules font sizes are well adjusted to the size of the screen. The Rules Modal also fits the screen size. The Rules Modal covers the width of the main div on each page, to avoid any confusion.
+
+#### Large Laptop
+Large Laptops have a comfier feel with all elements well spaced and consistent in their closeness to one another. The logo has downsized slightly. The main div padding is consistent throughout. Font sizes have moved down a bit to transition from one size to the next instead of large jumps.
+
+The Setup and Game div's are a good square shape, and consistent in size with one another to make the flow from the Setup to the Game page easy for the user. 
+
+#### Laptop
+At Laptop size, the Play and Rules buttons are closer to the size of other elements on the page. Text sizes have adjusted again but have done so consistently. The message at the top of the Home page has changed to 20px, but the Play and Rules titles are still at 30px to use some of the space in their div's.
+
+On the Setup and Game pages, the four div's are almost square and are a good size to hold each of the answers. 
+
+#### Tablet
+At tablet size, most of the web pages change shape. The Logo becomes stacked above the Navbar, so the three Nav elements can stay a good distance apart. The Navbar is smaller in height because it doesn't need to account for the Logo height anymore. The Footer social links are inside a div with `display:flex` and adjust to the width automatically.
+
+On the home page, the Play and Rules div's are now stacked one on top of the other, rather than side by side. On the Game and Setup pages, the four div's change into one column of four that are well spaced. The Rules Page and Modal adjust to the size of the page and the text wraps well to the next line.
+
+#### Mobile
+By mobile size, the Navbar has adjusted to having smaller gaps between elements but is still well spaced. The footer text adjusts well to this size and the background image can still be seen clearly.
+
+The Game and Setup page divs adjust well to all mobile sizes and have plenty of room between each div so the wrong button isn't clicked. The Rules Modal and Page are great at this size as well, with thinner margins to allow users to see more text on each line.
+
+#### Small Mobile
+The footer is well adjusted in height and the margins of the text both in the footer and at the top of the page are adjusted for smaller screen. This means they're don't wrap into more lines than needed.
+
+On the Home page, the Rules and Play buttons are smaller, but their hover property still clearly displays the question marks and pencils images.
+
+The questions on the Game page are adjusted to the size of the screen and have minimal margin left and right so the user can easily read the question. Font sizes are smaller, generally 18px - 24px across all pages.
+
 ## Fixed Bugs
 
 #### Score Page
 When I created the score page originally, I added a feature to present the users' selected answers in either red with a cross if they were wrong,and green with a tick if correct. I noticed when testing this worked that some of the longer answer options during the game play weren't staying centrally aligned, they would align left. 
 
-To fix this, I asked Javascript to create a paragraph element for each answer in the coloured boxes, and then added styling to align these to the center. This then created a problem with the answers page, as the question number, selected answer, and tick or cross were now all on seperate lines, as below.
+To fix this, I asked Javascript to create a paragraph element for each answer in the coloured boxes, and then added styling to align these to the center. This then created a problem with the score page, as the question number, selected answer, and tick or cross were now all on seperate lines, as below.
 
 ![Score Page Bug Issue](/assets/images/readme/bugs/score-page-issue-1.PNG "Score Page Bug Issue")
 
