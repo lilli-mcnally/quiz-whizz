@@ -108,8 +108,6 @@ footer p {
 #social-y,
 #social-x {
     display: flex;
-    justify-self: center;
-    align-self: center;
     text-decoration: none;
     color: #000;
 }

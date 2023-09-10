@@ -80,7 +80,7 @@ I have chosen to create the website with five different pages. This is so that t
 - [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
 - [Prototype Game page](/assets/images/readme/wireframes-and-prototype/game-page-prototype.PNG "Prototype Game page")
 
-## Bugs
+## Fixed Bugs
 
 #### Score Page
 When I created the score page originally, I added a feature to present the users' selected answers in either red with a cross if they were wrong,and green with a tick if correct. I noticed when testing this worked that some of the longer answer options during the game play weren't staying centrally aligned, they would align left. 
@@ -89,11 +89,11 @@ To fix this, I asked Javascript to create a paragraph element for each answer in
 
 ![Score Page Bug Issue](/assets/images/readme/bugs/score-page-issue-1.PNG "Score Page Bug Issue")
 
-I opened Developer Tools and found that some of the some, like "5." had the selected answer next to the number, inside the paragraph element with the class of "answer-list". However, others like "4." seemed to have another paragraph element inside with an id of "answer-one" or "answer-two" etc.
+I opened Developer Tools and found that some of the some, like `5.` had the selected answer next to the number, inside the paragraph element with the class of `answer-list`. However, others like `4.` seemed to have another paragraph element inside with an id of `answer-one` or `answer-two` etc.
 
 ![Score Page Bug Developer Tools](/assets/images/readme/bugs/score-page-issue-2.PNG "Score Page Bug Developer Tools")
 
-I stepped back through my code, using "console.log" to find at which point the paragraph was being given to the selected answer. The paragraph element was being passed into the selected array before the score page was created, so I went further back. I had created a variable called "answer" when the game was in play, which accessed the inner HTML of another variable called "move". I realised "move" was being used to obtain the ID of the click event, which meant it was assigning the inner HTML of whatever was clicked on to the "answer" variable. This was also because of the submit class still being assigned to the "div" instead of the paragraph element, so it was accepting a click on the div. I moved the submit class the paragraph element, and changed the paragraph element's height and width to 100%. This means wherever in the box the user clicks, the paragraph element in that box will be pushed into the selected answer array.
+I stepped back through my code, using `console.log` to find at which point the paragraph was being given to the selected answer. The paragraph element was being passed into the selected array before the score page was created, so I went further back. I had created a variable called `answer` when the game was in play, which accessed the inner HTML of another variable called `move`. I realised `move` was being used to obtain the ID of the click event, which meant it was assigning the inner HTML of whatever was clicked on to the `answer` variable. This was also because of the submit class still being assigned to the div instead of the paragraph element, so it was accepting a click on the div. I moved the submit class the paragraph element, and changed the paragraph element's height and width to 100%. This means wherever in the box the user clicks, the paragraph element in that box will be pushed into the selected answer array.
 
 ![Score Page Bug fix](/assets/images/readme/bugs/score-page-fix.PNG "Score Page Bug fix")
 
@@ -102,13 +102,13 @@ I stepped back through my code, using "console.log" to find at which point the p
 I added a home icon and the Quiz Whizz logo to the top of the home box, but struggled to get these to fit in line with each other. Originally, I made the home icon fixed and gave it top and left properties. However, when I wanted to add the Rules modal, I couldn't keep the logo centered as easily.I added the Rules button first and styled it with CSS.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-1.PNG "Score Page Bug fix")
 
-Then I gave it a top property of 50px, a left property of 150px and "position: abosolute;". This put the Rules button in the right place.
+Then I gave it a top property of 50px, a left property of 150px and `position: abosolute;`. This put the Rules button in the right place.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-2.PNG "Score Page Bug fix")
 
 However, on smaller screens, the top and left properties became unproportionate, pushing the rules button too close to the logo.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-3.PNG "Score Page Bug fix")
 
-I decided to remove the "position: absolute;" property on both the home icon and the rules button, and put all three elements into a div. I made the div display "flex", and added "justify-content: space-between;" with a margin left and right to create equal gaps between all three elements. I also added "align-items: centre;" to keep the home icon and rules button in line with the logo.
+I decided to remove the `position: absolute;` property on both the home icon and the rules button, and put all three elements into a div. I made the div display `flex`, and added `justify-content: space-between;` with a margin left and right to create equal gaps between all three elements. I also added `align-items: centre;` to keep the home icon and rules button in line with the logo.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-fix-1.PNG "Score Page Bug fix")
 
 Lastly, I checked this was working on smaller screens, and everything had adjusted correctly.
@@ -136,9 +136,47 @@ was equal to:
 
 This was classing a correctly selected answer as wrong, and not incrementing the score. The further issue was that Javascript wouldn't accept any replacement of `&quot;` with a quotation mark as this would end the string early. 
 
-The noticed that althought Javascript was unable to display the answer correctly, HTML could. Therefore, the best fix I found was to create a div on the game page with the CSS property "display: none;" and asked Javascript to display the correct answer in this div. I then changed the if statement checking whether the user's answer was correct to check whether it matched the innerHTML of the invisible div, instead of checking against the value the API had produced.
+The noticed that althought Javascript was unable to display the answer correctly, HTML could. Therefore, the best fix I found was to create a div on the game page with the CSS property `display: none;` and asked Javascript to display the correct answer in this div. I then changed the if statement checking whether the user's answer was correct to check whether it matched the innerHTML of the invisible div, instead of checking against the value the API had produced.
 
+#### Social Link Circles
 
+I wanted to add my social links into circles so the circles would be coloured, and then have a hover quality of a white background and just their border coloured. However, I was having issues with the circles showing a tall ovals and inconsistent to one another in size.
+
+![Social links showing as inconsistent icon sizes](/assets/images/readme/bugs/socials-issue-1.webp "Social links showing as inconsistent icon sizes")
+
+I first thing I noted was that all my social media icons were different sizes, and as I wanted them to have a same-sized circle around them, I'd need to opt for a more standardised style. I went back to [Font Awesome](https://fontawesome.com/) and found square versions of each of the social media logos.
+
+![Social links showing as ovals](/assets/images/readme/bugs/socials-issue-2.webp "Social links showing as ovals")
+
+The final problem was the ovals. I used Developer Tools to look at each icon, and noticed that although the icon had a font size, the anchor tag didn't have a height or width property, so it was using all the space the list item gave it. I tried defining a height, but it needed to be a block element, and then the icon would shift out of the centre of the circle. Instead, I decided to have the CSS property class and id which made up the circle look to the anchor instead of the list item. This worked much better as the anchor tag became the size of it's child element icon.
+
+![Social links circles fixed](/assets/images/readme/bugs/socials-fix.webp "Social links circles fixed")
+
+#### Jest Testing
+
+I had an issue getting my Jest Testing to work properly. I used the boilerplate set up code for Jest Testing from the learning module provided by [Code Institute](https://codeinstitute.net/). I added my first test, and tested and recieved an error.
+
+![Fetch error message](/assets/images/readme/bugs/jest-test-issue-1.webp "Fetch error message")
+
+I looked into the issue on Google and found a useful post written by [Borislav Hadzhiev](https://bobbyhadz.com/blog/javascript-referenceerror-fetch-is-not-defined) which explained that `fetch` isn't available on older versions of Node, and so a packaged needed to be added using `npm install node-fetch`. I installed this and added `import fetch from 'node-fetch'` as the article suggested, but recieved a different error. I also tried adding Babel support as suggested by the [Jest Documentation](https://jestjs.io/docs/tutorial-async), but still recieved the error message in the terminal.
+
+![Node version too old](/assets/images/readme/bugs/jest-test-issue-2.webp "Node version too old")
+
+I spoke to Sarah at the [Code Institute](https://codeinstitute.net/) tutor support team who advised the version of Node I'm using is too old to cater for `fetch` in the way I've imported it. However, changing the import to `const fetch = require("node-fetch")` meant I was able to use the Jest testing in my project.
+
+![Updated import for old Node version](/assets/images/readme/bugs/jest-test-fix.webp "Updated import for old Node version")
+
+## Unfixed Bugs
+
+#### Jest Testing (continued)
+
+Unfortunately, fixing the Jest Testing bug meant that the game Javascript file now had `require` at the top of the page, which threw a new error. It also meant Javascript stopped before the API was called, meaning the game wouldn't run while the `const fetch = require("node-fetch")` was written at the top of the game.js file. 
+
+![Require error message](/assets/images/readme/bugs/jest-test-cont-issue-1.webp "Require error message")
+
+The only way to fix this was to complete the Jest Testing, and then remove both `const fetch = require("node-fetch")` from the top and `module.exports = { game };` from the bottom of the game.js file. 
+
+Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.
 
 ## Credits
 
