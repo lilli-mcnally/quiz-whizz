@@ -167,9 +167,6 @@ async function main() {
     //Waits for the page to load, so Javascript can find the value of q before using it in the getQuestions function
     await getQuestions()
 
-    //Adds the rules modal to the game page
-    document.getElementById("rules-link").style.display = "flex";
-
     //Asks for the first question
     getNewQuestion()
 
