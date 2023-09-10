@@ -114,6 +114,31 @@ I decided to remove the "position: absolute;" property on both the home icon and
 Lastly, I checked this was working on smaller screens, and everything had adjusted correctly.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-fix-2.PNG "Score Page Bug fix")
 
+#### Shuffling the answers
+
+The API I decided to use is give a question, and four possible answers, one of which is correct. However, the answers were stored in separate arrays; one array called correct answer has the correct answer, and another array called incorrect answers stored the three incorrect answers. 
+
+The problem with this was that when assigning the answers to the inner HTML of the divs, the first div (blue) was always the correct answer. I tried adding the four answers to an array, and did some research but really struggled to find a way to easily shuffle the answers within the array. 
+
+I started working on a method using Math.Random() to select a random answer from the array and assign it to each of the answer divs. However, once an answer is assigned, I couldn’t see a way to eliminate it from the selection, so that if the Math.Random() function selected or rounded up/down to a number that had been selected before, it would choose a different answer. 
+
+I fixed this issue by changing my approach. Instead of randomly selecting each answer from the array, I shuffled the four strings inside the array by putting them in Alphabetical order using the sort() fuction.
+
+#### Answers with quotation marks
+
+There are a select number of correct and incorrect answers provided by the API that contain quotation marks. However, instead of having quotation marks inside the string, these answers have the `&quot;` entity instead. This meant that when checking if the answer submitted was equal to the value of the correct_answer, Javascript was checking if:
+
+>"A Fistful of Dollars", "For a Few Dollars More", "The Good, the Bad, and the Ugly"
+
+was equal to:
+
+>`&quot;`A Fistful of Dollars`&quot;`, `&quot;`For a Few Dollars More`&quot;`, `&quot;`The Good, the Bad, and the Ugly`&quot;`
+
+This was classing a correctly selected answer as wrong, and not incrementing the score. The further issue was that Javascript wouldn't accept any replacement of `&quot;` with a quotation mark as this would end the string early. 
+
+The noticed that althought Javascript was unable to display the answer correctly, HTML could. Therefore, the best fix I found was to create a div on the game page with the CSS property "display: none;" and asked Javascript to display the correct answer in this div. I then changed the if statement checking whether the user's answer was correct to check whether it matched the innerHTML of the invisible div, instead of checking against the value the API had produced.
+
+
 
 ## Credits
 
