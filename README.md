@@ -152,7 +152,7 @@ It also tells the user which questions they got right and which were wrong, with
 ## Design
 
 #### Colours
-I chose to make this project really colourful, but also associated colours with parts of the website for an easy user experience. I chose the following a peach colour for the logo, and four neutral pastel colours to feature on buttons.
+I chose to make this project really colourful, but also associated colours with parts of the website for an easy user experience. I chose the following a peach colour for the logo, and four neutral pastel colours to feature on buttons. I used the [WebAIM](https://webaim.org/resources/contrastchecker/) checker to find a darker version of the peach used in the logo for the enquiries email link hover colour.
 
 ![Colour Scheme](/assets/images/readme/colour-scheme.webp "Colour Scheme")
 

@@ -141,6 +141,14 @@ footer p {
     font-size: 18px;
 }
 
+#enquiries {
+    color: #000;
+}
+
+#enquiries:hover {
+    color: #942F00;
+}
+
 
 /* ----------------------------------------------------------- Home page */
 
