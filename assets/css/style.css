@@ -15,7 +15,6 @@ body {
     margin-left: 45%;
 }
 
-
 .home-nav {
     grid-area: home;
 }
@@ -153,14 +152,13 @@ footer p {
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 1% 10%;
+    padding: 3% 10%;
     overflow-y: scroll;
 }
 
 .home-box {
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 20px;
-    margin-top: 30px;
 }
 
 .home-text {
