@@ -1,5 +1,7 @@
 # QUIZ WHIZZ
 
+![Mockup](/assets/images/readme/mockup.PNG "Mockup")
+
 ## Purpose and Value
 ### User goals
 - To play a quiz game about films and test their knowledge
@@ -329,15 +331,23 @@ Anyone wishing to view or add to the game.test.js file should add these two line
 
 ## Deployment
 
-This site was built on Gitpo. I've used git add, commit and push to publish it on Github.
+This site was built on Gitpod. I've used git add, commit and push to publish it on Github.
 
 To deploy the site, I firstly went logged into Github and opened the Repository. I clicked "Settings" and then selected "Pages" on the left side of the screen.
 
 Then, under "Branch" I chose "Main", and clicked Save.
 
 ## Manual Testing
+Manual testing  was completed seperately in the [test.md](test.md) file
 
 ## Digital Testing
+### Spell Check
+| Page       | Result | Error Messages                                                                                    |
+|----------- | :----: |---------------------------------------------------------------------------------------------------|
+| Home Page  | Pass   | "webp" spelling error - webp is the file name of the logo, but isn't written anywhere on the page |
+| Setup Page | Pass   | "webp" spelling error - webp is the file name of the logo, but isn't written anywhere on the page |
+| Game Page  | Pass   | "webp" spelling error - webp is the file name of the logo, but isn't written anywhere on the page |
+| Rules Page | Pass   | "webp" spelling error - webp is the file name of the logo, but isn't written anywhere on the page |
 
 ### Validators
 | Validator                     | Page       | Result | Error Messages |
@@ -365,9 +375,27 @@ Then, under "Branch" I chose "Main", and clicked Save.
 | JSHint                        | game.js    | Fail   | On Line 67 - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (game, q, gameOver, getNewQuestion) | `game` refers to the global game object containing all arrays and objects that the functions use. To delete this object would mean global variables would be needed. <br> `q` refers to the number of questions requested from the API. It is needed here to check whether the user has answered as many questions as the API has requested. <br> `gameOver()` and `getNewQuestion()` are the two options for functions to be called at the end of the `userSubmit()` function. These must be referenced so the game knows which function to run next.| N/A |
 | JSHint                        | game.js   | Fail   | On Line 120 - The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype | Added `if` statement to Line 123 that checks whether the `i` in each loop belongs to the Object, and filters out any that return `false` for this `if` statement | Pass |
 
+### Lighthouse
+#### Home Desktop
+![Home Desktop](/assets/images/readme/lighthouse/lighthouse-home-desktop.png "Home Desktop")
+#### Home Mobile
+![Home Mobile](/assets/images/readme/lighthouse/lighthouse-home-mobile.png "Home Mobile")
+#### Setup Desktop
+![Setup Desktop](/assets/images/readme/lighthouse/lighthouse-setup-desktop.png "Setup Desktop")
+#### Setup Mobile
+![Setup Mobile](/assets/images/readme/lighthouse/lighthouse-setup-mobile.png "Setup Mobile")
+#### Game Desktop
+![Game Desktop](/assets/images/readme/lighthouse/lighthouse-game-desktop.png "Game Desktop")
+#### Game Mobile
+![Game Mobile](/assets/images/readme/lighthouse/lighthouse-game-mobile.png "Game Mobile")
+#### Rules Desktop
+![Rules Desktop](/assets/images/readme/lighthouse/lighthouse-rules-desktop.png "Rules Desktop")
+#### Rules Mobile
+![Rules Mobile](/assets/images/readme/lighthouse/lighthouse-rules-mobile.png "Rules Mobile")
+
 ## Credits
 ### Research
-- [Sporcle]( https://www.sporcle.com/?refresh)
+- [Sporcle](https://www.sporcle.com/?refresh)
 - [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
 
 ### Frameworks, Libraries & Programs
@@ -388,12 +416,12 @@ Then, under "Branch" I chose "Main", and clicked Save.
 
 #### Colours
 - I used [ColorSpace](https://mycolor.space/) and [Colormind](http://colormind.io/) to help me put together a palette of colours for my website
-- I used [Eye Dropper](https://eyedropper.org/) to find the HEX of the background of the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
+- I used [Eye Dropper](https://eyedropper.org/) to find the HEX of the background of the [Pencils](/assets/images/pencils.webp) and [Question Marks](/assets/images/question-marks.webp) images
 - I used [WebAIM](https://webaim.org/resources/contrastchecker/) to check the coloured text again their corresponding backgrounds
 
 ### Images
-- I used [Pixabay](https://pixabay.com/) for the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
-- I used [Unsplash](https://unsplash.com/) for the [Popcorn](assets/images/popcorn.webp) image
+- I used [Pixabay](https://pixabay.com/) for the [Pencils](/assets/images/pencils.webp) and [Question Marks](/assets/images/question-marks.webp) images
+- I used [Unsplash](https://unsplash.com/) for the [Popcorn](/assets/images/popcorn.webp) image
 - I used [Pexels](https://www.pexels.com/) for the [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) image (referenced in prototype, I was going to use this as my background but changed to Popcorn instead).
 - I used [Simple Image Resizer](https://www.simpleimageresizer.com/) to make my images smaller, so the page they're on loads faster.
 - I also used [Convertio](https://convertio.co/) [Pixelied PNG to WEBP Converter](https://pixelied.com/convert/png-converter/png-to-webp) to convert the images to a .WEBP file.
@@ -403,16 +431,20 @@ Then, under "Branch" I chose "Main", and clicked Save.
 - HTML Validator - [W3C Markup Validation Service](https://validator.w3.org/)
 - CSS Validator - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - Javascript Validator - [JSHint](https://jshint.com/)
+- Spell Checker - [W3C Spell Checker](https://www.w3.org/2002/01/spellchecker)
 
 ### Media
-- [Pencils](assets/images/pencils.webp) by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
-- [Question Marks](assets/images/question-marks.webp) by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
-- [Popcorn](assets/images/popcorn.webp) by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE)
-- [Logo](assets/images/logo.webp) created by me on [Canva](https://www.canva.com/)
-- [Favicon](assets/images/quiz-whizz-favicon.ico) created by me on [Canva](https://www.canva.com/) and changed to an icon using [Favicon.io](https://favicon.io/)
+- [Pencils](/assets/images/pencils.webp) by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
+- [Question Marks](/assets/images/question-marks.webp) by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
+- [Popcorn](/assets/images/popcorn.webp) by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE)
+- [Logo](/assets/images/logo.webp) created by me on [Canva](https://www.canva.com/)
+- [Favicon](/assets/images/quiz-whizz-favicon.ico) created by me on [Canva](https://www.canva.com/) and changed to an icon using [Favicon.io](https://favicon.io/)
 - [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/) (referenced in prototype, I was going to use this as my background but changed to Popcorn instead).
 - I created the colour palette for the README in [Microsoft Powerpoint](https://www.microsoft.com/en-gb/microsoft-365/powerpoint)
+- I used [Am I Responsive](https://ui.dev/amiresponsive) for my [Mockup](/assets/images/readme/mockup.PNG)
 
 ## Acknowledgements
-
+- My tutor Manu at Bristol College for his help with all my questions, no matter how trivial
+-  My mentor, Mitko Bachvarov
+- The Tutor Support Team at Code Institute for their amazing help and support, and everyone in the Code Institute Slack Community
 
