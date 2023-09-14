@@ -47,7 +47,6 @@ function getNewQuestion() {
     //Assigns the correct answer with correct punctuation to a div, for selected answer to be checked against later
     document.getElementById("correct-answer").innerHTML = game.questions[game.index].correct_answer;
 
-
     //Sorts the answers into alphabetical order. This also functions as shuffling the answers
     let answer = game.answers.sort();
 

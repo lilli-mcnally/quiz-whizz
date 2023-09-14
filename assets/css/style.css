@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
 
 /* ----------------------------------------------------------- General Styling */
-
 body {
     font-family: 'Preahvihear', sans-serif;
     color: #000;
@@ -59,14 +58,12 @@ body {
     font-size: 20px;
 }
 
-
 #rules-link:hover {
     cursor: pointer;
     background-color: #fafafa;
 }
 
 /* ----------------------------------------------------------- Footer */
-
 footer {
     background-color: rgba(239, 239, 239);
     border-radius: 0 0 20px 20px;
@@ -111,7 +108,6 @@ footer p {
     color: #000;
 }
 
-
 #social-f,
 #home-nav {
     background-color: #92C1F1;
@@ -149,9 +145,7 @@ footer p {
     color: #942F00;
 }
 
-
 /* ----------------------------------------------------------- Home page */
-
 .background {
     background: url("../images/popcorn.webp") no-repeat center center;
     background-size: cover;
@@ -267,8 +261,6 @@ footer p {
     background-color: #b29756;
     color: #fff;
 }
-
-
 
 .rules-setup {
     background-color: #a3d9ca;
@@ -414,7 +406,6 @@ footer p {
 }
 
 /* ----------------------------------------------------------- Rules page */
-
 .rules-div {
     margin: auto;
     height: auto;
@@ -449,10 +440,8 @@ footer p {
 }
 
 /* ---------------------------------------------------------------------------------------------- RESPONSIVE DESIGN */
-
 /* ----------------------------------------------------------- General Styling */
 @media screen and (min-width: 1201px) {
-
     .nav {
         margin-left: 50%;
     }
@@ -469,7 +458,6 @@ footer p {
     #logo-image {
         height: 125px;
     }
-
 }
 
 @media screen and (min-width: 2001px) {
@@ -493,7 +481,6 @@ footer p {
         font-size: 35px;
     }
 
-
     .footer-social {
         font-size: 40px;
     }
@@ -504,7 +491,6 @@ footer p {
 }
 
 @media screen and (max-width: 850px) {
-
     #logo-image {
         position: relative;
         margin: auto;
@@ -537,7 +523,6 @@ footer p {
     footer {
         margin-top: 30px;
     }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -568,7 +553,6 @@ footer p {
         font-size: 24px;
     }
 
-
     .button-text p {
         font-size: 24px;
     }
@@ -591,7 +575,6 @@ footer p {
 
 /* ----------------------------------------------------------- Home Page */
 @media screen and (min-width: 1201px) {
-
     .play:hover {
         background-size: 200%;
     }
@@ -612,7 +595,6 @@ footer p {
 }
 
 @media screen and (max-width: 850px) {
-
     .play:hover {
         background-size: 200%;
     }
@@ -627,7 +609,6 @@ footer p {
         height: 45%;
         min-height: 75px;
     }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -655,7 +636,6 @@ footer p {
 }
 
 /* ----------------------------------------------------------- Setup page */
-
 @media screen and (min-width: 1201px) {
 
     .setup-div {
@@ -674,7 +654,6 @@ footer p {
 }
 
 @media screen and (max-width: 425px) {
-
     .setup-div {
         margin-top: 20px;
         row-gap: 40px;
@@ -686,7 +665,6 @@ footer p {
 }
 
 /* ----------------------------------------------------------- Game Page */
-
 @media screen and (min-width: 851px) {
 
     #answer-one,
@@ -717,7 +695,6 @@ footer p {
 }
 
 @media screen and (max-width: 850px) {
-
     #game-nav {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "logo logo""home rules";
