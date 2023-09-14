@@ -159,6 +159,15 @@
 | X (Twitter) Social button | Cursor: pointer, background colour: white | Pass |
 | Enquiries email link | Cursor: pointer, background colour: dark peach | Pass |
 
-
 ## Usability
+| Question                                                     | User 1 | User 2 | User 3 |
+| ------------------------------------------------------------ | :----: | :----: | :----: |
+| Find the rules?                                              | 5      | 5      | 5      |
+| Find the game?                                               | 5      | 5      | 5      |
+| Find the quiz question on the game page?                     | 5      | 5      | 5      |
+| Select the answer you thought was correct?                   | 5      | 5      | 5      |
+| Find out which answers you got right at the end of the quiz? | 5      | 4      | 5      |
+| Find the enquiries email address?                            | 5      | 4      | 5      |
+| Find a link to Facebook?                                     | 5      | 4      | 5      |
+
 

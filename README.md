@@ -1,8 +1,85 @@
-# QUIZ WHIZZ
+# Quiz Whizz
+*This project is a quiz game website for those who love movie quizzes. You can choose how many quesions you'd like to play, and which questions you got right and wrong at the end. The project has been built using HTML, CSS, and Javascript*
+---
 
 ![Mockup](/assets/images/readme/mockup.PNG "Mockup")
 
+- [Purpose and Value](#purpose-and-value)
+  * [User goals](#user-goals)
+  * [User Stories](#user-stories)
+- [Competitor Review](#competitor-review)
+  * [Pros](#pros)
+  * [Cons](#cons)
+- [Objectives](#objectives)
+- [In the future, I would like to add additional quizzes to the website so the user can choose between a Movies quiz, a TV show quiz and a Music quiz.](#in-the-future--i-would-like-to-add-additional-quizzes-to-the-website-so-the-user-can-choose-between-a-movies-quiz--a-tv-show-quiz-and-a-music-quiz)
+- [Structure](#structure)
+- [Wireframes and Prototypes](#wireframes-and-prototypes)
+- [Features](#features)
+    + [Logo and Favicon](#logo-and-favicon)
+    + [Navbar](#navbar)
+    + [Play and Rules buttons](#play-and-rules-buttons)
+    + [Footer](#footer)
+    + [Rules Page and Modal](#rules-page-and-modal)
+    + [Setup Page](#setup-page)
+    + [Game Page](#game-page)
+    + [Score Page](#score-page)
+- [![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")](#--answer-section---assets-images-readme-features-feature-score-answerswebp--answer-section--)
+- [Design](#design)
+    + [Colours](#colours)
+    + [Typography](#typography)
+    + [Imagery](#imagery)
+    + [Styling](#styling)
+    + [Backgrounds](#backgrounds)
+- [![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")](#--light-grey-footer---assets-images-readme-design-design-footerwebp--light-grey-footer--)
+- [Responsive Design](#responsive-design)
+    + [4K Screens](#4k-screens)
+    + [Large Laptop](#large-laptop)
+    + [Laptop](#laptop)
+    + [Tablet](#tablet)
+    + [Mobile](#mobile)
+    + [Small Mobile](#small-mobile)
+- [Fixed Bugs](#fixed-bugs)
+    + [Score Page](#score-page-1)
+    + [Nav bar](#nav-bar)
+    + [Shuffling the answers](#shuffling-the-answers)
+    + [Answers with quotation marks](#answers-with-quotation-marks)
+    + [Social Link Circles](#social-link-circles)
+    + [Jest Testing](#jest-testing)
+- [![Updated import for old Node version](/assets/images/readme/bugs/jest-test-fix.webp "Updated import for old Node version")](#--updated-import-for-old-node-version---assets-images-readme-bugs-jest-test-fixwebp--updated-import-for-old-node-version--)
+- [Unfixed Bugs](#unfixed-bugs)
+    + [Jest Testing (continued)](#jest-testing--continued-)
+- [Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.](#anyone-wishing-to-view-or-add-to-the-gametestjs-file-should-add-these-two-lines-of-code-back-in-before-proceeding--and-remove-them-before-deployment)
+- [Deployment](#deployment)
+- [Then, under "Branch" I chose "Main", and clicked Save.](#then--under--branch--i-chose--main---and-clicked-save)
+- [Manual Testing](#manual-testing)
+- [Manual testing  was completed seperately in the [test.md](test.md) file](#manual-testing--was-completed-seperately-in-the--testmd--testmd--file)
+- [Digital Testing](#digital-testing)
+  * [Spell Check](#spell-check)
+  * [Validators](#validators)
+  * [Lighthouse](#lighthouse)
+    + [Home Desktop](#home-desktop)
+    + [Home Mobile](#home-mobile)
+    + [Setup Desktop](#setup-desktop)
+    + [Setup Mobile](#setup-mobile)
+    + [Game Desktop](#game-desktop)
+    + [Game Mobile](#game-mobile)
+    + [Rules Desktop](#rules-desktop)
+    + [Rules Mobile](#rules-mobile)
+- [![Rules Mobile](/assets/images/readme/lighthouse/lighthouse-rules-mobile.png "Rules Mobile")](#--rules-mobile---assets-images-readme-lighthouse-lighthouse-rules-mobilepng--rules-mobile--)
+- [Credits](#credits)
+  * [Research](#research)
+  * [Frameworks, Libraries & Programs](#frameworks--libraries---programs)
+    + [Planning and Development](#planning-and-development)
+    + [Styling and Code](#styling-and-code)
+    + [Colours](#colours-1)
+  * [Images](#images)
+    + [Validators](#validators-1)
+  * [Media](#media)
+- [Acknowledgements](#acknowledgements)
+
+---
 ## Purpose and Value
+
 ### User goals
 - To play a quiz game about films and test their knowledge
 Website goals
@@ -10,34 +87,27 @@ Website goals
 - To provide a fun game with 10 – 50 questions about films to users
 
 ### User Stories
-
 > A couple who want to add a quiz game into their Friday Game nights when they have friends over. They want to play the game on their laptop so the questions and answers are big for everyone to see. They want to be able to get straight on to the game, and access the rules easily at any time.
 
-> A man who likes to do puzzles and quizzes on his very long commute to work. He want to have the option to play with lots of questions to keep him entertained. He would like the game to easily function from the web on a mobile device without needing to scroll or spend too much time figuring out how the website works.
-
+> A user who likes to do puzzles and quizzes on his very long commute to work. They want to have the option to play with lots of questions to keep him entertained. They would like the game to easily function from the web on a mobile device without needing to scroll a lot or spend too much time figuring out how the website works.
+---
 ## Competitor Review
-
 I’ve reviewed a few quiz related websites, including [Sporcle]( https://www.sporcle.com/?refresh) and [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
 ### Pros
-
 Sporcle
-
 - Each quiz is easy to use, the user doesn’t need to figure out how to play.
 - The game keeps a running score total
 
 Buzzfeed
-
 - The film questions have images to go with them, so the user can see a snippet of the movie if they’re unsure on the title.
 
 ### Cons
 Sporcle
-
 - Home page and game page layouts is very crowded and confusing for the user.
 
 Buzzfeed
-
 - The quiz runs in a linear layout, rather than each new question being displayed where the previous one was. This added to the busy layout with adverts for other quizzes means it’s unclear for the user where the quiz starts and ends.
-
+---
 ## Objectives
 - To provide easy access to the game on the home page
 - To provide a Rules page to explain how the game works
@@ -62,9 +132,8 @@ From the scatter graph above, I have decided to focus on the following four obje
 - To keep a running score and show the total score at the end
 
 In the future, I would like to add additional quizzes to the website so the user can choose between a Movies quiz, a TV show quiz and a Music quiz.
-
+---
 ## Structure
-
 I have chosen to create the website with five different pages. This is so that the user will be able to see clear difference between where the game is, where the rules are, and the home page. These five pages are:
 
 - Home page
@@ -72,20 +141,18 @@ I have chosen to create the website with five different pages. This is so that t
 - Game page – the page where the user plays the quiz game
 - Score page – the page where the user is told their total score after completing the quiz
 - Rules page – where the user can check how the quiz works and what the rules are.
-
+---
 ## Wireframes and Prototypes
-
 - [Home page wireframe](/assets/images/readme/wireframes-and-prototype/home-page-wireframe.png "Home page wireframe")
 - [Setup page wireframe](/assets/images/readme/wireframes-and-prototype/setup-page-wireframe.png "Setup page wireframe")
 - [Game page wireframe](/assets/images/readme/wireframes-and-prototype/game-page-wireframe.png "Game page wireframe")
 - [Score page wireframe](/assets/images/readme/wireframes-and-prototype/score-page-wireframe.png "Score page wireframe")
 - [Rules page wireframe](/assets/images/readme/wireframes-and-prototype/rules-page-wireframe.png "Rules page wireframe")
 - [Prototype Game page](/assets/images/readme/wireframes-and-prototype/game-page-prototype.PNG "Prototype Game page")
-
+---
 ## Features
 
 #### Logo and Favicon
-
 I created the Logo myself on [Canva](https://www.canva.com/) using the [ColorSpace](https://mycolor.space/) website to help me find the right shade of peach.
 
 ![Logo](/assets/images/readme/features/feature-logo.webp "Logo")
@@ -95,7 +162,6 @@ I also created an amended version without the text, and converted this to an ico
 ![Favicon](/assets/images/readme/features/feature-favicon.webp "Favicon")
 
 #### Navbar
-
 The Navbar features three colourful buttons directing you to the three pages across the site: the Home Page, the Setup page, and the Rules page. 
 
 ![Navbar](/assets/images/readme/features/feature-navbar.webp "Navbar")
@@ -105,8 +171,12 @@ All three buttons the same border radius and hover quality - changing the backgr
 ![Navbar Hover](/assets/images/readme/features/feature-navbar-hover.webp "Navbar Hover")
 
 #### Play and Rules buttons
+On the Home page, I created two large buttons for users to choose to either check the rules, or move to the Setup page. The two buttons have background colours that have a matching hex to the the background image used as their hover quality. I made the play and rules buttons the main part of the home page to make the game and rules easy to get to. This is to meet the needs of the couple mentioned in the [User Stories](#user-stories) section.
 
-On the Home page, I created two large buttons for users to choose to either check the rules, or move to the Setup page. The two div's have background colours that have a matching hex to the the background image used as their hover quality. 
+> *They want to be able to get straight on to the game...*
+
+This also meets my first objective:
+> To provide easy access to the game on the home page
 
 ![Play button](/assets/images/readme/features/feature-play.webp "Play button")
 ![Play button hover](/assets/images/readme/features/feature-play-hover.webp "Play button hover")
@@ -114,14 +184,18 @@ On the Home page, I created two large buttons for users to choose to either chec
 ![Rules button hover](/assets/images/readme/features/feature-rules-hover.webp "Rules button hover")
 
 #### Footer
-
 The footer has the four social media links. It also features a "Contact the developer" email address.
 
 ![Footer](/assets/images/readme/features/feature-footer.webp "Footer")
 
 #### Rules Page and Modal
+I wanted the Rules to be accessible from anywhere on the site to align with the needs of the couple in the [User Stories](#user-stories) section. 
+> *...and access the rules easily at any time.*
 
-I wanted the Rules to be accessible from anywhere on the site, so I created a Rules page in HTML and a Rules Modal using Javascript. Both are a simplistic div with the a green border, and six easy to read rules of how to play the game.
+The Rules Page and Modal also achieves and goes beyond my second objective:
+> To provide a Rules page to explain how the game works
+
+I created a Rules page in HTML and a Rules Modal using Javascript. Both are a simplistic div with the a green border, and six easy to read rules of how to play the game.
 
 ![Rules Page](/assets/images/readme/features/feature-rules-page.webp "Rules Page")
 
@@ -130,27 +204,31 @@ The Modal has a close button so the user can open and close it with ease.
 ![Rules Modal](/assets/images/readme/features/feature-rules-modal.webp "Rules Modal")
 
 #### Setup Page
+The setup page has four options. Three are to decide how many questions to request from the API and present to the user, and the final one is a link back to the Rules page. The options for how many questions a user can choose to play are 10, 25 and 50. I wanted to have up to 50 to suit the user with the long communte, from the [User Stories](#user-stories) section.
+> *They want to have the option to play with lots of questions to keep him entertained*
 
-The setup page has four options. Three are to decide how many questions to request from the API and present to the user, and the final one is a link back to the Rules page. Each button has a hover quality to make the colour of of the div a bit darker, demonstrated below on the Rules div.
+This option also meets my third objective:
+> To give options for how many questions the user wants in the game
+
+Each button has a hover quality to make the colour of of the div a bit darker, demonstrated below on the Rules div.
 
 ![Setup Page](/assets/images/readme/features/feature-setup.webp "Setup Page")
 
 #### Game Page
-
 The Game page has a score that increments when the user answers correctly as the game is played. The question is called and presented to the user, and then four divs below have the possible answers.
 
 ![Game Page](/assets/images/readme/features/feature-game.webp "Game Page")
 
 #### Score Page
-
-Finally the score page shows the users final score once the game has finished. 
+Finally the score page shows the users final score once the game has finished. This and the incrementing score on the game page completes my fourth objective:
+> To keep a running score and show the total score at the end
 
 ![Score Page](/assets/images/readme/features/feature-final-score.webp "Score Page")
 
 It also tells the user which questions they got right and which were wrong, with colour coding and a tick or cross to match. I did consider presenting the user with the correct answer at this point, however my mentor Mitko Bachvarov advised not revealing the answer would mean the user is more likely to play again.
 
 ![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")
-
+---
 ## Design
 
 #### Colours
@@ -193,14 +271,19 @@ The main background across the website is an image of popcorn. I originally chos
 I chose to change the background colour of the Footer to a very light grey. I wanted it to be a different colour to the other divs on the website, and choosing a light grey meant I didn't add too many colour variations.
 
 ![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")
-
+---
 ## Responsive Design
+
 #### 4K Screens
 On largest screens up to 2560px, the background image is consistently filling the whole page. The main div with a white background adjusts according to screen size easily as well. Rules and Play buttons height is dependant on the view height. The gap between each Navbar element also adjusts easily, and the same is for each Footer social element. The text at the top of the page and footer are both centrally aligned and adjust to size.
 
 On the Game and Setup pages, the four divs in the centre are well spaced and have good gaps between them. On the Score page, the Answers secton fills the centre gap and the grid inside holding the answers adjusts it's margins to the size of the screen. 
 
 The Rules page fills the page width with a small margin on the left and right. The Rules font sizes are well adjusted to the size of the screen. The Rules Modal also fits the screen size. The Rules Modal covers the width of the main div on each page, to avoid any confusion.
+
+Overall the 4K screen size looks good and meets the needs of the couple in the [User Stories](#user-stories) section.
+
+> *They want to play the game on their laptop so the questions and answers are big for everyone to see*
 
 #### Large Laptop
 Large Laptops have a comfier feel with all elements well spaced and consistent in their closeness to one another. The logo has downsized slightly. The main div padding is consistent throughout. Font sizes have moved down a bit to transition from one size to the next instead of large jumps.
@@ -227,8 +310,10 @@ The footer is well adjusted in height and the margins of the text both in the fo
 
 On the Home page, the Rules and Play buttons are smaller, but their hover property still clearly displays the question marks and pencils images.
 
-The questions on the Game page are adjusted to the size of the screen and have minimal margin left and right so the user can easily read the question. Font sizes are smaller, generally 18px - 24px across all pages.
+The questions on the Game page are adjusted to the size of the screen and have minimal margin left and right.  Font sizes are smaller, generally 18px - 24px across all pages. This meets the needs of the user with the long commute from the [User Stories](#user-stories) section because the user can easily read the question no matter what size device they use.
+> *They would like the game to easily function from the web on a mobile device without needing to scroll a lot*
 
+---
 ## Fixed Bugs
 
 #### Score Page
@@ -247,7 +332,6 @@ I stepped back through my code, using `console.log` to find at which point the p
 ![Score Page Bug fix](/assets/images/readme/bugs/score-page-fix.PNG "Score Page Bug fix")
 
 #### Nav bar
-
 I added a home icon and the Quiz Whizz logo to the top of the home box, but struggled to get these to fit in line with each other. Originally, I made the home icon fixed and gave it top and left properties. However, when I wanted to add the Rules modal, I couldn't keep the logo centered as easily.I added the Rules button first and styled it with CSS.
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-issue-1.PNG "Score Page Bug fix")
 
@@ -264,7 +348,6 @@ Lastly, I checked this was working on smaller screens, and everything had adjust
 ![Score Page Bug fix](/assets/images/readme/bugs/nav-bar-fix-2.PNG "Score Page Bug fix")
 
 #### Shuffling the answers
-
 The API I decided to use is give a question, and four possible answers, one of which is correct. However, the answers were stored in separate arrays; one array called correct answer has the correct answer, and another array called incorrect answers stored the three incorrect answers. 
 
 The problem with this was that when assigning the answers to the inner HTML of the divs, the first div (blue) was always the correct answer. I tried adding the four answers to an array, and did some research but really struggled to find a way to easily shuffle the answers within the array. 
@@ -274,7 +357,6 @@ I started working on a method using Math.Random() to select a random answer from
 I fixed this issue by changing my approach. Instead of randomly selecting each answer from the array, I shuffled the four strings inside the array by putting them in Alphabetical order using the sort() fuction.
 
 #### Answers with quotation marks
-
 There are a select number of correct and incorrect answers provided by the API that contain quotation marks. However, instead of having quotation marks inside the string, these answers have the `&quot;` entity instead. This meant that when checking if the answer submitted was equal to the value of the correct_answer, Javascript was checking if:
 
 >"A Fistful of Dollars", "For a Few Dollars More", "The Good, the Bad, and the Ugly"
@@ -288,7 +370,6 @@ This was classing a correctly selected answer as wrong, and not incrementing the
 The noticed that althought Javascript was unable to display the answer correctly, HTML could. Therefore, the best fix I found was to create a div on the game page with the CSS property `display: none;` and asked Javascript to display the correct answer in this div. I then changed the if statement checking whether the user's answer was correct to check whether it matched the innerHTML of the invisible div, instead of checking against the value the API had produced.
 
 #### Social Link Circles
-
 I wanted to add my social links into circles so the circles would be coloured, and then have a hover quality of a white background and just their border coloured. However, I was having issues with the circles showing a tall ovals and inconsistent to one another in size.
 
 ![Social links showing as inconsistent icon sizes](/assets/images/readme/bugs/socials-issue-1.webp "Social links showing as inconsistent icon sizes")
@@ -304,7 +385,6 @@ The final problem was the ovals. I used Developer Tools to look at each icon, an
 I later decided to change the circles to a rounded-corner square, so the social links background were consistent with the rest of the site.
 
 #### Jest Testing
-
 I had an issue getting my Jest Testing to work properly. I used the boilerplate set up code for Jest Testing from the learning module provided by [Code Institute](https://codeinstitute.net/). I added my first test, and tested and recieved an error.
 
 ![Fetch error message](/assets/images/readme/bugs/jest-test-issue-1.webp "Fetch error message")
@@ -316,11 +396,10 @@ I looked into the issue on Google and found a useful post written by [Borislav H
 I spoke to Sarah at the [Code Institute](https://codeinstitute.net/) tutor support team who advised the version of Node I'm using is too old to cater for `fetch` in the way I've imported it. However, changing the import to `const fetch = require("node-fetch")` meant I was able to use the Jest testing in my project.
 
 ![Updated import for old Node version](/assets/images/readme/bugs/jest-test-fix.webp "Updated import for old Node version")
-
+---
 ## Unfixed Bugs
 
 #### Jest Testing (continued)
-
 Unfortunately, fixing the Jest Testing bug meant that the game Javascript file now had `require` at the top of the page, which threw a new error. It also meant Javascript stopped before the API was called, meaning the game wouldn't run while the `const fetch = require("node-fetch")` was written at the top of the game.js file. 
 
 ![Require error message](/assets/images/readme/bugs/jest-test-cont-issue-1.webp "Require error message")
@@ -328,19 +407,19 @@ Unfortunately, fixing the Jest Testing bug meant that the game Javascript file n
 The only way to fix this was to complete the Jest Testing, and then remove both `const fetch = require("node-fetch")` from the top and `module.exports = { game };` from the bottom of the game.js file. 
 
 Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.
-
+---
 ## Deployment
-
 This site was built on Gitpod. I've used git add, commit and push to publish it on Github.
 
 To deploy the site, I firstly went logged into Github and opened the Repository. I clicked "Settings" and then selected "Pages" on the left side of the screen.
 
 Then, under "Branch" I chose "Main", and clicked Save.
-
+---
 ## Manual Testing
 Manual testing  was completed seperately in the [test.md](test.md) file
-
+---
 ## Digital Testing
+
 ### Spell Check
 | Page       | Result | Error Messages                                                                                    |
 |----------- | :----: |---------------------------------------------------------------------------------------------------|
@@ -392,8 +471,9 @@ Manual testing  was completed seperately in the [test.md](test.md) file
 ![Rules Desktop](/assets/images/readme/lighthouse/lighthouse-rules-desktop.png "Rules Desktop")
 #### Rules Mobile
 ![Rules Mobile](/assets/images/readme/lighthouse/lighthouse-rules-mobile.png "Rules Mobile")
-
+---
 ## Credits
+
 ### Research
 - [Sporcle](https://www.sporcle.com/?refresh)
 - [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
@@ -413,6 +493,7 @@ Manual testing  was completed seperately in the [test.md](test.md) file
 - All social media icons obtained from [Font Awesome](https://fontawesome.com/)
 - Preahvihear font from [Google Fonts](https://fonts.google.com/)
 - Pluma font from [Canva](https://www.canva.com/)
+- Table of contents created by [MarkDown TOC](http://ecotrust-canada.github.io/markdown-toc/)
 
 #### Colours
 - I used [ColorSpace](https://mycolor.space/) and [Colormind](http://colormind.io/) to help me put together a palette of colours for my website
@@ -442,9 +523,9 @@ Manual testing  was completed seperately in the [test.md](test.md) file
 - [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/) (referenced in prototype, I was going to use this as my background but changed to Popcorn instead).
 - I created the colour palette for the README in [Microsoft Powerpoint](https://www.microsoft.com/en-gb/microsoft-365/powerpoint)
 - I used [Am I Responsive](https://ui.dev/amiresponsive) for my [Mockup](/assets/images/readme/mockup.PNG)
-
+---
 ## Acknowledgements
 - My tutor Manu at Bristol College for his help with all my questions, no matter how trivial
--  My mentor, Mitko Bachvarov
+- My mentor, Mitko Bachvarov
 - The Tutor Support Team at Code Institute for their amazing help and support, and everyone in the Code Institute Slack Community
 
