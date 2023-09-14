@@ -1,9 +1,12 @@
 # Quiz Whizz
-*This project is a quiz game website for those who love movie quizzes. You can choose how many quesions you'd like to play, and which questions you got right and wrong at the end. The project has been built using HTML, CSS, and Javascript*
----
+*This project is a quiz game website for those who love movie quizzes. You can choose how many questions you'd like to play, and which questions you got right and wrong at the end. The project has been built using HTML, CSS, and Javascript.*
 
+---
 ![Mockup](/assets/images/readme/mockup.PNG "Mockup")
 
+---
+
+## Table of Contents
 - [Purpose and Value](#purpose-and-value)
   * [User goals](#user-goals)
   * [User Stories](#user-stories)
@@ -11,7 +14,6 @@
   * [Pros](#pros)
   * [Cons](#cons)
 - [Objectives](#objectives)
-- [In the future, I would like to add additional quizzes to the website so the user can choose between a Movies quiz, a TV show quiz and a Music quiz.](#in-the-future--i-would-like-to-add-additional-quizzes-to-the-website-so-the-user-can-choose-between-a-movies-quiz--a-tv-show-quiz-and-a-music-quiz)
 - [Structure](#structure)
 - [Wireframes and Prototypes](#wireframes-and-prototypes)
 - [Features](#features)
@@ -23,14 +25,12 @@
     + [Setup Page](#setup-page)
     + [Game Page](#game-page)
     + [Score Page](#score-page)
-- [![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")](#--answer-section---assets-images-readme-features-feature-score-answerswebp--answer-section--)
 - [Design](#design)
     + [Colours](#colours)
     + [Typography](#typography)
     + [Imagery](#imagery)
     + [Styling](#styling)
     + [Backgrounds](#backgrounds)
-- [![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")](#--light-grey-footer---assets-images-readme-design-design-footerwebp--light-grey-footer--)
 - [Responsive Design](#responsive-design)
     + [4K Screens](#4k-screens)
     + [Large Laptop](#large-laptop)
@@ -45,14 +45,10 @@
     + [Answers with quotation marks](#answers-with-quotation-marks)
     + [Social Link Circles](#social-link-circles)
     + [Jest Testing](#jest-testing)
-- [![Updated import for old Node version](/assets/images/readme/bugs/jest-test-fix.webp "Updated import for old Node version")](#--updated-import-for-old-node-version---assets-images-readme-bugs-jest-test-fixwebp--updated-import-for-old-node-version--)
 - [Unfixed Bugs](#unfixed-bugs)
     + [Jest Testing (continued)](#jest-testing--continued-)
-- [Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.](#anyone-wishing-to-view-or-add-to-the-gametestjs-file-should-add-these-two-lines-of-code-back-in-before-proceeding--and-remove-them-before-deployment)
 - [Deployment](#deployment)
-- [Then, under "Branch" I chose "Main", and clicked Save.](#then--under--branch--i-chose--main---and-clicked-save)
 - [Manual Testing](#manual-testing)
-- [Manual testing  was completed seperately in the [test.md](test.md) file](#manual-testing--was-completed-seperately-in-the--testmd--testmd--file)
 - [Digital Testing](#digital-testing)
   * [Spell Check](#spell-check)
   * [Validators](#validators)
@@ -65,7 +61,6 @@
     + [Game Mobile](#game-mobile)
     + [Rules Desktop](#rules-desktop)
     + [Rules Mobile](#rules-mobile)
-- [![Rules Mobile](/assets/images/readme/lighthouse/lighthouse-rules-mobile.png "Rules Mobile")](#--rules-mobile---assets-images-readme-lighthouse-lighthouse-rules-mobilepng--rules-mobile--)
 - [Credits](#credits)
   * [Research](#research)
   * [Frameworks, Libraries & Programs](#frameworks--libraries---programs)
@@ -76,6 +71,7 @@
     + [Validators](#validators-1)
   * [Media](#media)
 - [Acknowledgements](#acknowledgements)
+
 
 ---
 ## Purpose and Value
@@ -132,6 +128,7 @@ From the scatter graph above, I have decided to focus on the following four obje
 - To keep a running score and show the total score at the end
 
 In the future, I would like to add additional quizzes to the website so the user can choose between a Movies quiz, a TV show quiz and a Music quiz.
+
 ---
 ## Structure
 I have chosen to create the website with five different pages. This is so that the user will be able to see clear difference between where the game is, where the rules are, and the home page. These five pages are:
@@ -228,6 +225,7 @@ Finally the score page shows the users final score once the game has finished. T
 It also tells the user which questions they got right and which were wrong, with colour coding and a tick or cross to match. I did consider presenting the user with the correct answer at this point, however my mentor Mitko Bachvarov advised not revealing the answer would mean the user is more likely to play again.
 
 ![Answer section](/assets/images/readme/features/feature-score-answers.webp "Answer section")
+
 ---
 ## Design
 
@@ -271,6 +269,7 @@ The main background across the website is an image of popcorn. I originally chos
 I chose to change the background colour of the Footer to a very light grey. I wanted it to be a different colour to the other divs on the website, and choosing a light grey meant I didn't add too many colour variations.
 
 ![Light grey footer](/assets/images/readme/design/design-footer.webp "Light grey footer")
+
 ---
 ## Responsive Design
 
@@ -396,6 +395,7 @@ I looked into the issue on Google and found a useful post written by [Borislav H
 I spoke to Sarah at the [Code Institute](https://codeinstitute.net/) tutor support team who advised the version of Node I'm using is too old to cater for `fetch` in the way I've imported it. However, changing the import to `const fetch = require("node-fetch")` meant I was able to use the Jest testing in my project.
 
 ![Updated import for old Node version](/assets/images/readme/bugs/jest-test-fix.webp "Updated import for old Node version")
+
 ---
 ## Unfixed Bugs
 
@@ -407,6 +407,7 @@ Unfortunately, fixing the Jest Testing bug meant that the game Javascript file n
 The only way to fix this was to complete the Jest Testing, and then remove both `const fetch = require("node-fetch")` from the top and `module.exports = { game };` from the bottom of the game.js file. 
 
 Anyone wishing to view or add to the game.test.js file should add these two lines of code back in before proceeding, and remove them before deployment.
+
 ---
 ## Deployment
 This site was built on Gitpod. I've used git add, commit and push to publish it on Github.
@@ -414,9 +415,11 @@ This site was built on Gitpod. I've used git add, commit and push to publish it 
 To deploy the site, I firstly went logged into Github and opened the Repository. I clicked "Settings" and then selected "Pages" on the left side of the screen.
 
 Then, under "Branch" I chose "Main", and clicked Save.
+
 ---
 ## Manual Testing
 Manual testing  was completed seperately in the [test.md](test.md) file
+
 ---
 ## Digital Testing
 
@@ -471,6 +474,7 @@ Manual testing  was completed seperately in the [test.md](test.md) file
 ![Rules Desktop](/assets/images/readme/lighthouse/lighthouse-rules-desktop.png "Rules Desktop")
 #### Rules Mobile
 ![Rules Mobile](/assets/images/readme/lighthouse/lighthouse-rules-mobile.png "Rules Mobile")
+
 ---
 ## Credits
 
