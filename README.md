@@ -337,8 +337,40 @@ Then, under "Branch" I chose "Main", and clicked Save.
 
 ## Credits
 
+### Research
+- [Sporcle]( https://www.sporcle.com/?refresh)
+- [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
+
+### Frameworks, Libraries & Programs
+#### Planning and Development
+- I created my wireframes on [Balsamiq](https://balsamiq.com/)
+- I created my prototype on [Figma](https://www.figma.com/)
+- I build the project on on [Gitpod](https://gitpod.io/)
+- I stored and deployed the project on [Github](https://github.com/)
+
+#### Styling and Code
+- API [Open Trivia Database](https://opentdb.com/)
+- I used [Jest](https://jestjs.io/) for my game testing
+- I used the boilerplate code for Jest Testing in the [Code Institute](codeinstitute.net) lessons to set up my game testing
+
+#### Colours
+- I used [ColorSpace](https://mycolor.space/) to help me put together a pallette of colours for my website.
+
 ### Images
-- [cinema](/assets/images/cinema.jpg) by [Tima Miroshnichenko](https://www.pexels.com/@tima-miroshnichenko/)
-- [pencils] by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
-- [question-marks] by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
-- [popcorn] by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE)
+- [Pencils](assets/images/pencils.webp) by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
+- [Question Marks](assets/images/question-marks.webp) by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
+- [Popcorn](assets/images/popcorn.webp) by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE)
+- [Logo](assets/images/logo.webp) created by me on [Canva](https://www.canva.com/)
+- [Favicon](assets/images/quiz-whizz-favicon.ico) created by me on [Canva](https://www.canva.com/) and changed to an icon using [Favicon.io](https://favicon.io/)
+- [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/) - referenced in prototype, I was going to use this as my background but changed to Popcorn instead.
+
+#### Validators
+
+#### Media
+- All social media icons obtained from [Font Awesome](https://fontawesome.com/)
+- Preahvihear font from [Google Fonts](https://fonts.google.com/)
+- Pluma font from [Canva](https://www.canva.com/)
+
+## Acknowledgements
+W3 schools for helping me set up my modal on game page
+
