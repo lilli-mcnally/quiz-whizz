@@ -39,7 +39,7 @@
 | Logo | Directed to Home Page | Pass |
 | Home Navbar button | Directed to Home Page | Pass |
 | Play Navbar button | Directed to Setup Page | Pass |
-| Rules Navbar button | Opens the Rules Modal | |
+| Rules Navbar button | Opens the Rules Modal | Pass |
 | Close button on Rules Modals | Closes the Rules Modal | Pass |
 | 10 Questions button  | Directed to Game Page, 10 questions called from API | Pass |
 | 25 Questions button  | Directed to Game Page, 10 questions called from API | Pass |
