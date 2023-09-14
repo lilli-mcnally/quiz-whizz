@@ -17,7 +17,7 @@ let game = {
     score: 0,
     correct: [],
     selected: [],
-}
+};
 
 // Obtains the value of "q" from the URL, and requests that many questions from the API
 async function getQuestions() {
@@ -49,13 +49,13 @@ function getNewQuestion() {
 
 
     //Sorts the answers into alphabetical order. This also functions as shuffling the answers
-    answers = game.answers.sort();
+    let answer = game.answers.sort();
 
     //Changes the text of each answer box to it's assigned answer for this turn
-    document.getElementById("answer-one").innerHTML = answers[0];
-    document.getElementById("answer-two").innerHTML = answers[1];
-    document.getElementById("answer-three").innerHTML = answers[2];
-    document.getElementById("answer-four").innerHTML = answers[3];
+    document.getElementById("answer-one").innerHTML = answer[0];
+    document.getElementById("answer-two").innerHTML = answer[1];
+    document.getElementById("answer-three").innerHTML = answer[2];
+    document.getElementById("answer-four").innerHTML = answer[3];
     document.getElementById("score").innerHTML = `Score: ${game.score} / ${q}`;
 }
 
@@ -74,7 +74,7 @@ function userSubmit() {
 
             //Checks if the answer selected matches correct answer provided by the API
             if (answer == document.getElementById("correct-answer").innerHTML) {
-                game.score++
+                game.score++;
                 document.getElementById("score").innerHTML = `Score: ${game.score} / ${q}`;
             }
 
@@ -94,8 +94,8 @@ function userSubmit() {
                 getNewQuestion();
             }
         });
-    };
-};
+    }
+}
 
 //Replaces the game HTML with the score page
 function gameOver() {
@@ -110,7 +110,7 @@ function gameOver() {
     document.getElementById("play-again-link").style.display = "flex";
 
     // Creates a new div for the game answers to tell user if they chose right or wrong
-    let gameAnswers = document.createElement("div")
+    let gameAnswers = document.createElement("div");
     gameAnswers.setAttribute("id", "game-answers");
 
     // Makes the "answers-title" visible
@@ -119,45 +119,49 @@ function gameOver() {
     //Iterates through each value in the "selected" array
     for (let i in game.selected) {
 
-        //Creates a new "p" element
-        let answerList = document.createElement("p");
+        //Checks each "i" actually belongs to the game.selected object
+        if (game.selected.hasOwnProperty(i)) {
 
-        //Appends the "p" to the div with the ID of"game-area"
-        gameAnswers.appendChild(answerList)
+            //Creates a new "p" element
+            let answerList = document.createElement("p");
 
-        //Checks if each value in the selected array matches the value of the same index in the correct array
-        if (game.selected[i] == game.correct[i]) {
+            //Appends the "p" to the div with the ID of"game-area"
+            gameAnswers.appendChild(answerList);
 
-            //Changes the HTML to the number of the question, and a tick icon
-            answerList.innerHTML = `${Number(i) + 1}. ${game.selected[i]} <i class="fa-solid fa-check"></i>`;
+            //Checks if each value in the selected array matches the value of the same index in the correct array
+            if (game.selected[i] == game.correct[i]) {
 
-            //Changes font to green and adds the class name of "answer-list" for further styling
-            answerList.className = "answer-list";
-            answerList.style.color = "#026302";
-        } else {
-            //Changes the HTML to the number of the question, and an X icon
-            answerList.innerHTML = `${Number(i) + 1}. ${game.selected[i]} <i class="fa-solid fa-xmark"></i>`;
+                //Changes the HTML to the number of the question, and a tick icon
+                answerList.innerHTML = `${Number(i) + 1}. ${game.selected[i]} <i class="fa-solid fa-check"></i>`;
 
-            //Changes font to red and adds the class name of "answer-list" for further styling
-            answerList.className = "answer-list";
-            answerList.style.color = "#9e0202";
+                //Changes font to green and adds the class name of "answer-list" for further styling
+                answerList.className = "answer-list";
+                answerList.style.color = "#026302";
+            } else {
+                //Changes the HTML to the number of the question, and an X icon
+                answerList.innerHTML = `${Number(i) + 1}. ${game.selected[i]} <i class="fa-solid fa-xmark"></i>`;
+
+                //Changes font to red and adds the class name of "answer-list" for further styling
+                answerList.className = "answer-list";
+                answerList.style.color = "#9e0202";
+            }
+
+            // Sets the "game-answers" div as a child of the "answers-div"
+            document.getElementById("answers-div").appendChild(gameAnswers);
         }
-
-        // Sets the "game-answers" div as a child of the "answers-div"
-        document.getElementById("answers-div").appendChild(gameAnswers)
     }
 }
 
 async function main() {
     //Waits for the page to load, so Javascript can find the value of q before using it in the getQuestions function
-    await getQuestions()
+    await getQuestions();
 
     //Asks for the first question
-    getNewQuestion()
+    getNewQuestion();
 
     //Applies the Event Listeners and waits for the user to choose an answer
-    userSubmit()
+    userSubmit();
 }
 
 //Runs the startup for the game when the page first loads
-main()
+main();

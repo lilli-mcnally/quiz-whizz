@@ -335,8 +335,37 @@ To deploy the site, I firstly went logged into Github and opened the Repository.
 
 Then, under "Branch" I chose "Main", and clicked Save.
 
-## Credits
+## Manual Testing
 
+## Digital Testing
+
+### Validators
+| Validator                     | Page       | Result | Error Messages |
+| ----------------------------- | ---------- | :----: |----------------|
+| W3C Markup Validation Service | index.html | Pass   |                |
+| W3C Markup Validation Service | setup.html | Pass   |                |
+| W3C Markup Validation Service | game.html  | Pass   |                |
+| W3C Markup Validation Service | rules.html | Pass   |                |
+| W3C CSS Validation Service    | style.css  | Pass   |                |
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+| Validator                     | Page       | Result | Error Messages     | Fix | Result after Fix |
+| ----------------------------- | ---------- | :----: | ------------------ | --- | ---------------- |
+| JSHint                        | modal.js   | Pass   | N/A                | N/A |  N/A             |
+| JSHint                        | game.js    | Fail   | Undefined Variable on Line 52 | Added `let` to Line 52 and changed `answers` to `answer` | Pass |
+| JSHint                        | game.js    | Fail   | Missing Semicolon on Lines 20, 77, 113, 126, 147, 153, 156, 159 and 163 | Added Semicolons to Lines 20, 77, 113, 126, 147, 153, 156, 159 and 163 | Pass |
+| JSHint                        | game.js    | Fail   | Unnecessary Semicolon on Lines 97 and 98 | Removed Semicolons on Lines 97 and 98 | Pass |
+| JSHint                        | game.js    | Fail   | 'async functions' is only available in ES8 (use 'esversion: 8') on lines 23 and 151 | The project is intended for use on devices compatible with ES8 or above. No action required. | N/A |
+| JSHint                        | game.js    | Fail   | On Line 67 - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (game, q, gameOver, getNewQuestion) | `game` refers to the global game object containing all arrays and objects that the functions use. To delete this object would mean global variables would be needed. <br> `q` refers to the number of questions requested from the API. It is needed here to check whether the user has answered as many questions as the API has requested. <br> `gameOver()` and `getNewQuestion()` are the two options for functions to be called at the end of the `userSubmit()` function. These must be referenced so the game knows which function to run next.| N/A |
+| JSHint                        | game.js   | Fail   | On Line 120 - The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype | Added `if` statement to Line 123 that checks whether the `i` in each loop belongs to the Object, and filters out any that return `false` for this `if` statement | Pass |
+
+## Credits
 ### Research
 - [Sporcle]( https://www.sporcle.com/?refresh)
 - [Buzzfeed Quizzes](https://www.buzzfeed.com/uk/quizzes).
@@ -362,7 +391,6 @@ Then, under "Branch" I chose "Main", and clicked Save.
 - I used [Eye Dropper](https://eyedropper.org/) to find the HEX of the background of the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
 - I used [WebAIM](https://webaim.org/resources/contrastchecker/) to check the coloured text again their corresponding backgrounds
 
-
 ### Images
 - I used [Pixabay](https://pixabay.com/) for the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
 - I used [Unsplash](https://unsplash.com/) for the [Popcorn](assets/images/popcorn.webp) image
@@ -371,8 +399,10 @@ Then, under "Branch" I chose "Main", and clicked Save.
 - I also used [Convertio](https://convertio.co/) [Pixelied PNG to WEBP Converter](https://pixelied.com/convert/png-converter/png-to-webp) to convert the images to a .WEBP file.
 - Lastly, I used [Tiny PNG](https://tinypng.com/) to compress each image, to improve webpage load times.
 
-
 #### Validators
+- HTML Validator - [W3C Markup Validation Service](https://validator.w3.org/)
+- CSS Validator - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- Javascript Validator - [JSHint](https://jshint.com/)
 
 ### Media
 - [Pencils](assets/images/pencils.webp) by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)

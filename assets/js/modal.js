@@ -9,5 +9,5 @@ document.getElementById("rules-link").onclick = function seeRules() {
     //Makes the Rules modal invisible
     close.onclick = function () {
         rulesModal.style.display = "none";
-    }
-}
+    };
+};
