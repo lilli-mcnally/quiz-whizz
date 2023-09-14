@@ -347,30 +347,42 @@ Then, under "Branch" I chose "Main", and clicked Save.
 - I created my prototype on [Figma](https://www.figma.com/)
 - I build the project on on [Gitpod](https://gitpod.io/)
 - I stored and deployed the project on [Github](https://github.com/)
+- I used [W3 Schools](https://www.w3schools.com/) for guidance on setting up my Rules Modal
 
 #### Styling and Code
 - API [Open Trivia Database](https://opentdb.com/)
 - I used [Jest](https://jestjs.io/) for my game testing
 - I used the boilerplate code for Jest Testing in the [Code Institute](codeinstitute.net) lessons to set up my game testing
+- All social media icons obtained from [Font Awesome](https://fontawesome.com/)
+- Preahvihear font from [Google Fonts](https://fonts.google.com/)
+- Pluma font from [Canva](https://www.canva.com/)
 
 #### Colours
-- I used [ColorSpace](https://mycolor.space/) to help me put together a pallette of colours for my website.
+- I used [ColorSpace](https://mycolor.space/) and [Colormind](http://colormind.io/) to help me put together a palette of colours for my website
+- I used [Eye Dropper](https://eyedropper.org/) to find the HEX of the background of the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
+- I used [WebAIM](https://webaim.org/resources/contrastchecker/) to check the coloured text again their corresponding backgrounds
+
 
 ### Images
+- I used [Pixabay](https://pixabay.com/) for the [Pencils](assets/images/pencils.webp) and [Question Marks](assets/images/question-marks.webp) images
+- I used [Unsplash](https://unsplash.com/) for the [Popcorn](assets/images/popcorn.webp) image
+- I used [Pexels](https://www.pexels.com/) for the [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) image (referenced in prototype, I was going to use this as my background but changed to Popcorn instead).
+- I used [Simple Image Resizer](https://www.simpleimageresizer.com/) to make my images smaller, so the page they're on loads faster.
+- I also used [Convertio](https://convertio.co/) [Pixelied PNG to WEBP Converter](https://pixelied.com/convert/png-converter/png-to-webp) to convert the images to a .WEBP file.
+- Lastly, I used [Tiny PNG](https://tinypng.com/) to compress each image, to improve webpage load times.
+
+
+#### Validators
+
+### Media
 - [Pencils](assets/images/pencils.webp) by [KatineDesign](https://pixabay.com/users/katinedesign-1833633/)
 - [Question Marks](assets/images/question-marks.webp) by [Chandorobray](https://pixabay.com/users/chandorobray-29401458/) 
 - [Popcorn](assets/images/popcorn.webp) by [Maiken Ingvordsen](https://unsplash.com/photos/Bz-eN8FoVPE)
 - [Logo](assets/images/logo.webp) created by me on [Canva](https://www.canva.com/)
 - [Favicon](assets/images/quiz-whizz-favicon.ico) created by me on [Canva](https://www.canva.com/) and changed to an icon using [Favicon.io](https://favicon.io/)
-- [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/) - referenced in prototype, I was going to use this as my background but changed to Popcorn instead.
-
-#### Validators
-
-#### Media
-- All social media icons obtained from [Font Awesome](https://fontawesome.com/)
-- Preahvihear font from [Google Fonts](https://fonts.google.com/)
-- Pluma font from [Canva](https://www.canva.com/)
+- [cinema]( https://www.pexels.com/photo/an-empty-cinema-7991486/) by [Tima Miroshnichenko]( https://www.pexels.com/@tima-miroshnichenko/) (referenced in prototype, I was going to use this as my background but changed to Popcorn instead).
+- I created the colour palette for the README in [Microsoft Powerpoint](https://www.microsoft.com/en-gb/microsoft-365/powerpoint)
 
 ## Acknowledgements
-W3 schools for helping me set up my modal on game page
+
 
